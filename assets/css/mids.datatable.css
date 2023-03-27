@@ -1,0 +1,125 @@
+/* DataTable Custom Styling, specific for MIDS */
+table.dataTable {
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-color: rgba(0, 184, 212, 0) !important;
+}
+
+table.dataTable tr:hover {
+    background-color: white !important;
+    transition: all 120ms ease-out;
+    /* color: white !important; */
+}
+
+.table-hover > tbody > tr:hover { --bs-table-accent-bg: #f4f4f4; }
+
+table.dataTable thead tr:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white !important;
+    transition: all 120ms ease-out;
+}
+
+table.dataTable thead tr th {
+    font-weight: medium !important;
+    color: #000000;
+}
+
+table.dataTable thead tr th:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%238b8b8b' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e") !important;
+    transition: all 150ms ease-out;
+
+}
+
+.form-select:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+.paginate_button {
+    border-radius: 10px !important;
+}
+
+.dataTables_paginate {
+    margin: 15px 15px 18px 0px !important;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table th.table-name,
+table td.table-name {
+    vertical-align: middle;
+    min-width: 300px;
+}
+
+.table th.table-cent,
+.table td.table-cent {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.table th.table-vertcent,
+.table td.table-vertcent {
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+
+.table th.table-its,
+.table td.table-its {
+    padding: 10px 10px;
+}
+
+.table th.table-its-value,
+.table td.table-its-value {
+    padding: 20px 0px;
+}
+
+.bd-none-i {
+    border-top: none !important;
+    border-bottom: 1px #f5f5f5 solid !important;
+}
+
+.dataTables_empty {
+    border-top: none !important;
+    border-bottom: 1px #f5f5f5 solid !important;
+}
+
+.dataTables_wrapper {
+    width: 100% !important;
+}
+
+
+@media (max-width: 992px) {
+    .table-container {
+        width: calc(100vw - 58px) !important;
+        margin-left: 7px !important;
+        overflow: auto !important;
+    }
+
+    .dataTables_wrapper {
+        min-width: 680px !important;
+        width: 680px !important;
+    }
+}
+
+table.dataTable tbody td.sorting_1 {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.table-textarea {
+    resize: none;
+    overflow: hidden;
+}
+/* DataTable Custom Styling end */

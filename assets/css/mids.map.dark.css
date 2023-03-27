@@ -1,0 +1,26 @@
+.leaflet-control-zoom {
+    border: none !important;
+}
+
+.leaflet-bar a {
+    background-color: #292929;
+    color: #f4f4f4 !important;
+}
+
+.leaflet-control-zoom-in {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.leaflet-control-zoom-out {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.leaflet-tile {
+    filter: invert(1) saturate(0.5) hue-rotate(3.14rad) brightness(100%) !important;
+}
+
+.leaflet-container .leaflet-control-attribution {
+    background: #202020 !important;
+}

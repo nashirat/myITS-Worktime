@@ -1,0 +1,44 @@
+
+.leaflet-control-zoom {
+    border: none !important;
+}
+
+.leaflet-control-zoom-in {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.leaflet-control-zoom-out {
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.leaflet-tile {
+    filter: invert(0) saturate(0.7) hue-rotate(179deg)  !important;
+}
+
+.leaflet-bottom.leaflet-right {
+    display: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+    /* box-shadow: none !important; */
+    box-shadow: rgba(17, 12, 46, 0.08) 0px 8px 20px 0px !important;
+    border-radius: 10px !important;
+    font-family: "Poppins";
+    font-weight: 500;
+    width: max-content;
+    padding: 2px !important;
+}
+
+.leaflet-popup-content {
+    margin: 8px 10px 8px 10px !important;
+}
+
+.leaflet-popup-tip {
+    box-shadow: none !important;
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}

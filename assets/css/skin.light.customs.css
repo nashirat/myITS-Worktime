@@ -1,0 +1,10 @@
+.card-file-thumb {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: white; };
+
+.card {
+  box-shadow: 0 1rem 8rem rgba( #000, .33 );
+}
