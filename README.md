@@ -1,3 +1,3 @@
-# MyITS Design System
+# myITS Worktime
 
-Dokumentasi design dan template terbaru untuk aplikasi myITS.
+
