@@ -7,7 +7,7 @@
 
             <a href="../beranda" class="d-flex justify-content-center align-items-center">
                 <img src="../../assets/img/logo-myits-blue.svg" class="wd-55 mg-t-5">
-                <p class="tx-poppins tx-medium tx-20 tx-color-01 mg-b-0 mg-l-8">Space Management</p>
+                <p class="tx-poppins tx-medium tx-20 tx-color-01 mg-b-0 mg-l-8">Worktime</p>
             </a>
         </div>
         <div class="d-flex align-items-center">

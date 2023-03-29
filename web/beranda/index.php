@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-  <?php include "../partial/head.php"?>
+  <?php include "../partial/head.php" ?>
 </head>
 
 <!-- Body -->
 
 <body class="mn-ht-100v d-flex flex-column">
-  <?php include "../partial/navbar.php"?>
+  <?php include "../partial/navbar.php" ?>
 
-  <?php include "../partial/loading.php"?>
+  <?php include "../partial/loading.php" ?>
 
 
   <div class="content pd-0" style="position: relative">
@@ -23,7 +23,7 @@
         style="min-height: 100vh; overflow:visible;">
 
         <!-- Sidebar -->
-        <?php include "../partial/sidebar.php"?>
+        <?php include "../partial/sidebar.php" ?>
         <!-- Sidebar End -->
 
 
@@ -197,7 +197,8 @@
                   style="border-radius: 20px; padding: 15px !important; padding-top: 0px !important;">
                   <div class="wd-100p d-flex flex-column"
                     style="background-color: #f4f4f4; border-radius: 20px; padding: 10px; gap: 8px;">
-                    <div class="btn wd-100p card static bd-0"
+
+                    <div class="btn wd-100p card static bd-0" data-toggle="modal" data-target="#modalRK"
                       style="box-shadow: rgba(17, 12, 46, 0.045) 0px 4px 28px 0px; border-radius: 15px; padding: 10px; text-align: left; color: black;">
                       <div class="d-flex align-items-center ht-100p pd-l-4">
                         <div class="rkstatus d-flex align-items-center justify-content-center"
@@ -261,11 +262,12 @@
                         </div>
                       </div>
                     </div>
-                    
+
+
 
 
                   </div>
-                  
+
                   <!-- <div class="wd-100p d-flex mg-t-15">
                     <div class="wd-100p d-flex pd-r-10">
                       <div class="wd-100p"
@@ -278,11 +280,58 @@
                       <ion-icon name="add" class="wd-30 ht-30" style="color: black;"></ion-icon></div>
                   </div> -->
 
-                  <div class="wd-100p ht-150"></div>
-                  
+                  <div class="wd-100p ht-150">
+                  </div>
+
                 </div>
               </div>
             </div>
+
+            <div class="modal fade" id="modalRK" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content bg-color" style="border-radius: 20px; padding: 20px;">
+                  <div class="tx-poppins tx-14 tx-normal" style="line-height: 1;">
+                    Realisasi Kerja
+                  </div>
+                  <div class="tx-poppins tx-18 tx-medium mg-b-10">
+                    Dashborad myITS Worktime
+                  </div>
+
+                  <!-- <div class="wd-100p d-flex pd-5 gap-1" style="background-color: #f4f4f4; border-radius: 15px;">
+                      <div class="card-bg-color pd-5 pd-x-8" style="border-radius: 12px;">Delegasi</div>
+                      <div class="card-bg-color pd-5 pd-x-8" style="border-radius: 12px;">Sub RK</div>
+                  </div> -->
+
+                  <div class="wd-100p mg-b-10">
+                    
+                  </div>
+                  <div class="wd-100p bg-black-1 rounded-its-10 ht-40 mg-b-10"></div>
+                  <div class="wd-100p d-flex mg-t-5">
+                    <button class="mg-l-auto btn btn-text-dark">
+                      <div class="tx-poppins tx-14 tx-normal" data-dismiss="modal">Batal</div>
+                    </button>
+                    <button class="btn btn-primary" style="border-radius: 12px !important;">
+                      <div class="tx-poppins tx-14 tx-normal" style="color: white;">Simpan</div>
+                    </button>
+                  </div>
+                  <!-- <div class="row row-xs wd-100p">
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                  </div> -->
+
+                </div>
+              </div>
+            </div>
+
+
 
             <!-- <div class="mg-l-10 d-flex align-items-center justify-content-between mg-b-15 mg-t-20 ht-50">
               <div class="d-flex align-items-center justify-content-start">

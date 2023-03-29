@@ -3,9 +3,9 @@
     style="position: sticky; top: 95px; height: calc(100vh - 120px); overflow:visible;">
 
     <!-- Profile Widget -->
-    <div class="d-none d-lg-block rounded-its-10" style="margin-left: 13px;">
+    <div class="d-none d-lg-block" style="margin-left: 13px; border-radius: 15px;">
         <div class="profile mg-b-15 pd-0 pd-l-4 pd-y-4 d-flex justify-content-start align-items-center pos-relative dropdown-link-profile"
-            style="width: 226px; border-radius: 10px;">
+            style="width: 226px; border-radius: 15px;">
             <div class="dropdown dropdown-profile wd-100p ht-50 d-flex justify-content-start align-items-center help">
                 <a type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     class="d-flex flex-fill ht-50 dropdown-link">
@@ -64,7 +64,7 @@
                 <li class="nav-item" title=""><a id="kelolaruang-select" href="../kelolaruang"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/kelolaruang.png" class="wd-20 mg-r-15"><span
-                            class="tx-poppins  text-truncate">Kelola Ruang</span></a>
+                            class="tx-poppins  text-truncate">Presensi</span></a>
                 </li>
                 <button
                     class="btn btn-icon btn-sm btn-its-custom-1 rounded-its-20p btn-side d-flex align-items-center pos-absolute"
@@ -87,7 +87,7 @@
                 <li class="nav-item" title=""><a href="../reservasi"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/reservasi.png" class="wd-20 mg-r-15"><span
-                            class="tx-poppins  text-truncate">Reservasi</span></a>
+                            class="tx-poppins  text-truncate">Cuti</span></a>
                 </li>
         
             </div>
