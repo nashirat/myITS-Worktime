@@ -613,7 +613,7 @@ a.badge-its-3-transparent.focus {
     left: 0;
     top: 0;
     border-radius: inherit;
-    box-shadow: rgba(17, 12, 46, 0.08) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.075) 0px 48px 100px 0px;
     z-index: -1;
     transition: box-shadow .5s;
 }
@@ -2635,9 +2635,9 @@ textarea {
 
 
 .inside-border {
-    -webkit-box-shadow: inset 0px 0px 0px 2px #f2f2f2;
-    -moz-box-shadow: inset 0px 0px 0px 2px #f2f2f2;
-    box-shadow: inset 0px 0px 0px 2px #f2f2f2;
+    -webkit-box-shadow: inset 0px 0px 0px 2px #f0f0f0;
+    -moz-box-shadow: inset 0px 0px 0px 2px #f0f0f0;
+    box-shadow: inset 0px 0px 0px 2px #f0f0f0;
     transition: all 120ms ease-out;
 }
 
@@ -2730,13 +2730,13 @@ textarea {
     left: 0;
     top: 0;
     border-radius: inherit;
-    box-shadow: rgba(17, 12, 46, 0.08) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.075) 0px 48px 100px 0px;
     z-index: -1;
     transition: box-shadow .5s;
 }
 
 .card.static:hover::before {
-    box-shadow: rgba(17, 12, 46, 0.08) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.075) 0px 48px 100px 0px;
 
 }
 
@@ -2768,6 +2768,11 @@ textarea:disabled {
 
 .rounded-its-6 {
     border-radius: 7px;
+}
+
+.btn-primary {
+    background-color: #408bfc;
+    border-color: #408bfc;
 }
 
 .btn-custom-select {
@@ -2853,3 +2858,38 @@ textarea:disabled {
     opacity: 1;
     padding: 0.5rem 0;
  } */
+
+ /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }

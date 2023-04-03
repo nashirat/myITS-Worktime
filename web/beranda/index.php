@@ -137,7 +137,7 @@
                     </div>
                   </div>
                   <div class="d-flex flex-column justify-content-center align-items-center pos-absolute presenpercent"
-                    style="background-color: #0168fa; padding-top: 11px; padding-bottom: 15px; width: 100%; height: 100%; transition: all 500ms ease-out;">
+                    style="background-color: #408bfc; padding-top: 11px; padding-bottom: 15px; width: 100%; height: 100%; transition: all 500ms ease-out;">
                   </div>
                 </div>
               </div>
@@ -182,10 +182,11 @@
                 </div>
               </div> -->
             </div>
-            <div class="d-lg-none wd-100p card static bd-0 mg-t-15"
+
+            <div class="d-lg-none wd-100p card static bd-0 mg-t-15 "
               style="border-radius: 30px; padding: 0px !important;">
-              <div class="wd-100p pd-20 d-flex justify-content-between align-items-center">
-                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Rencana Kerja</div>
+              <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Realisasi Kerja</div>
                 <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
                   title="Menuju modul absensi"
                   style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
@@ -193,96 +194,139 @@
                 </div>
               </div>
               <div class="wd-100p d-flex flex-column">
-                <div class="rc1 wd-100p card-bg-color"
-                  style="border-radius: 20px; padding: 15px !important; padding-top: 0px !important;">
-                  <div class="wd-100p d-flex flex-column"
-                    style="background-color: #f4f4f4; border-radius: 20px; padding: 10px; gap: 8px;">
+                <div class="wd-100p"
+                  style="border-radius: 30px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                  <div class="wd-100p d-flex flex-column mg-b-5">
+                    <div class="rc1 wd-100p card-bg-color" style="border-radius: 20px; padding-top: 0px !important;">
+                      <div class="wd-100p d-flex flex-column">
 
-                    <div class="btn wd-100p card static bd-0" data-toggle="modal" data-target="#modalRK"
-                      style="box-shadow: rgba(17, 12, 46, 0.045) 0px 4px 28px 0px; border-radius: 15px; padding: 10px; text-align: left; color: black;">
-                      <div class="d-flex align-items-center ht-100p pd-l-4">
-                        <div class="rkstatus d-flex align-items-center justify-content-center"
-                          style="border-radius: 50%; background-color: #ff994d; height: 12px; width: 12px; min-height: 12px; min-width: 12px;">
-                        </div>
-                        <div class="wd-100p pd-x-10 d-flex">
-                          <div class="tx-poppins tx-medium tx-14">
-                            Dashoard myITS Worktime
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div class="rkstatus d-flex align-items-center justify-content-around mg-r-10 mg-l-2 pd-x-8"
+                              style="border-radius: 12px; background-color: #e7f0ff; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16">
+                                Template myITS Worktime
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                Dalam Pengerjaan
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="wd-20 d-flex align-items-center">
-                          <ion-icon name="ellipsis-vertical"></ion-icon>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn wd-100p card static bd-0 d-flex"
-                      style="box-shadow: rgba(17, 12, 46, 0.045) 0px 4px 28px 0px; border-radius: 15px; padding: 10px; text-align: left; color: black;">
-                      <div class="d-flex align-items-center ht-100p pd-l-4">
-                        <div class="rkstatus d-flex align-items-center justify-content-center"
-                          style="border-radius: 50%; background-color: #0168fa; height: 12px; width: 12px; min-height: 12px; min-width: 12px;">
-                        </div>
-                        <div class="wd-100p pd-x-10 d-flex">
-                          <div class="tx-poppins tx-medium tx-14">
-                            Website dokumentasi myITS Design System
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div class="rkstatus d-flex align-items-center justify-content-around mg-r-10 mg-l-2 pd-x-8"
+                              style="border-radius: 12px; background-color: #e7f0ff; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                              <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16">
+                                Website myITS Design System
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                Dalam Pengerjaan
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="wd-20 d-flex align-items-center">
-                          <ion-icon name="ellipsis-vertical"></ion-icon>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn wd-100p card static bd-0 d-flex"
-                      style="box-shadow: rgba(17, 12, 46, 0.045) 0px 4px 28px 0px; border-radius: 15px; padding: 10px; text-align: left; color: black;">
-                      <div class="d-flex align-items-center ht-100p pd-l-4">
-                        <div class="rkstatus d-flex align-items-center justify-content-center"
-                          style="border-radius: 50%; background-color: #ff994d; height: 12px; width: 12px; min-height: 12px; min-width: 12px;">
-                        </div>
-                        <div class="wd-100p pd-x-10 d-flex">
-                          <div class="tx-poppins tx-medium tx-14">
-                            myITS Design System
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8"
+                              style="border-radius: 12px; background-color: #fff6d9; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                              <div class="wd-6 mg-r-2"
+                                style="background-color: #ed9d59da; border-radius: 4px; height: 16px;"></div>
+                              <div class="wd-6 mg-l-2"
+                                style="background-color: #ed9d59da; border-radius: 4px; height: 16px;"></div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                NEXT.js Frontend Interaction Space Management
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                Belum Dimulai
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="wd-20 d-flex align-items-center">
-                          <ion-icon name="ellipsis-vertical"></ion-icon>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="btn wd-100p card static bd-0"
-                      style="box-shadow: rgba(17, 12, 46, 0.045) 0px 4px 28px 0px; border-radius: 15px; padding: 10px; text-align: left; color: black;">
-                      <div class="d-flex align-items-center ht-100p pd-l-4">
-                        <div class="rkstatus d-flex align-items-center justify-content-center"
-                          style="border-radius: 50%; background-color: #1fe2bb; height: 12px; width: 12px; min-height: 12px; min-width: 12px;">
-                        </div>
-                        <div class="wd-100p pd-x-10 d-flex">
-                          <div class="tx-poppins tx-medium tx-14">
-                            Frontend aplikasi myITS Space Management
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div
+                              class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
+                              style="border-radius: 12px; background-color: #cbf8ef; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                              <div class="wd-6 mg-r-2 pos-absolute"
+                                style="top: 21px; left: 16px; background-color: #32ba9e; border-radius: 4px; height: 12px; transform: rotate(-45deg)">
+                              </div>
+                              <div class="wd-6 mg-l-2 pos-absolute"
+                                style="right: 18px; background-color: #32ba9e; border-radius: 4px; height: 23px; transform: rotate(45deg)">
+                              </div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                Template myITS Space Management
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                Selesai
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="wd-20 d-flex align-items-center">
-                          <ion-icon name="ellipsis-vertical"></ion-icon>
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center pd-l-0">
+                            <div
+                              class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
+                              style="border-radius: 12px; background-color: #cbf8ef; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                              <div class="wd-6 mg-r-2 pos-absolute"
+                                style="top: 21px; left: 16px; background-color: #32ba9e; border-radius: 4px; height: 12px; transform: rotate(-45deg)">
+                              </div>
+                              <div class="wd-6 mg-l-2 pos-absolute"
+                                style="right: 18px; background-color: #32ba9e; border-radius: 4px; height: 23px; transform: rotate(45deg)">
+                              </div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                myITS Design System Figma
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03 mg-t-2">
+                                Selesai
+                              </div>
+                            </div>
+                          </div>
                         </div>
+
                       </div>
                     </div>
-
-
-
-
                   </div>
-
-                  <!-- <div class="wd-100p d-flex mg-t-15">
-                    <div class="wd-100p d-flex pd-r-10">
-                      <div class="wd-100p"
-                        style="background-color: #f7f7f7; border-radius: 15px; box-shadow: rgba(17, 12, 46, 0.01) 0px 4px 20px 0px inset; height: 45px;">
-                      </div>
-
+                  <div class="btn wd-100p pd-t-5 pd-b-15 d-flex justify-content-center align-items-center"
+                    style="color: black;">
+                    <div class="d-flex justify-content-center align-items-center mg-r-8"
+                      style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
+                      <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
                     </div>
-                    <div class="btn d-flex justify-content-center align-items-center"
-                      style="min-height: 45px; min-width: 45px; height: 45px; width: 45px; border-radius: 15px; background-color: white;">
-                      <ion-icon name="add" class="wd-30 ht-30" style="color: black;"></ion-icon></div>
-                  </div> -->
-
-                  <div class="wd-100p ht-150">
+                    <div class="tx-poppins tx-14 tx-medium">
+                      Tambah RK Baru
+                    </div>
                   </div>
-
+                  <div class="wd-100p d-flex"></div>
                 </div>
               </div>
             </div>
@@ -298,15 +342,23 @@
                     Dashborad myITS Worktime
                   </div>
 
-                  <!-- <div class="wd-100p d-flex pd-5 gap-1" style="background-color: #f4f4f4; border-radius: 15px;">
-                      <div class="card-bg-color pd-5 pd-x-8" style="border-radius: 12px;">Delegasi</div>
-                      <div class="card-bg-color pd-5 pd-x-8" style="border-radius: 12px;">Sub RK</div>
-                  </div> -->
-
                   <div class="wd-100p mg-b-10">
-                    
+                    <button class="accordion">Detail</button>
+                    <div class="panel">
+                      <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Delegasi</button>
+                    <div class="panel">
+                      <p>Lorem ipsum...</p>
+                    </div>
+
+                    <button class="accordion">Jadikan Sub RK</button>
+                    <div class="panel">
+                      <p>Lorem ipsum...</p>
+                    </div>
                   </div>
-                  <div class="wd-100p bg-black-1 rounded-its-10 ht-40 mg-b-10"></div>
+
                   <div class="wd-100p d-flex mg-t-5">
                     <button class="mg-l-auto btn btn-text-dark">
                       <div class="tx-poppins tx-14 tx-normal" data-dismiss="modal">Batal</div>
@@ -338,11 +390,15 @@
                 
               </div>
             </div> -->
+            <div class="d-block d-lg-none wd-100p pd-20 mg-t-10">
+              <div class="tx-poppins tx-26 tx-medium pd-l-5" style="letter-spacing: -1px;">
+                Informasi
+              </div>
+            </div>
 
-            <div class="d-lg-none wd-100p card static bd-0 mg-t-15"
-              style="border-radius: 30px; padding: 0px !important;">
-              <div class="wd-100p pd-20 d-flex justify-content-between align-items-center">
-                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Informasi Cuti</div>
+            <div class="d-lg-none wd-100p card static bd-0" style="border-radius: 30px; padding: 0px !important;">
+              <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Presensi</div>
                 <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
                   title="Menuju modul absensi"
                   style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
@@ -350,11 +406,156 @@
                 </div>
               </div>
               <div class="wd-100p d-flex flex-column">
-                <div class="rc1 wd-100p ht-600 card-bg-color"
-                  style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.07) 0px 12px 45px 0px;"></div>
+                <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
+                  style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+
+                </div>
               </div>
             </div>
 
+            <div class="d-lg-none wd-100p card static bd-0 mg-t-15 "
+              style="border-radius: 30px; padding: 0px !important;">
+              <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Cuti</div>
+                <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                  title="Menuju modul absensi"
+                  style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                  <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                </div>
+              </div>
+              <div class="wd-100p d-flex flex-column">
+                <div class="d-flex wd-100p ht-200"
+                  style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                  <div class="tx-poppins tx-40 tx-medium"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-lg-none wd-100p card static bd-0 mg-t-15 "
+              style="border-radius: 30px; padding: 0px !important;">
+              <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Shift</div>
+                <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                  title="Menuju modul absensi"
+                  style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                  <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                </div>
+              </div>
+              <div class="wd-100p d-flex flex-column">
+                <div class="wd-100p"
+                  style="border-radius: 30px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                  <div class="wd-100p d-flex flex-column mg-b-5">
+                    <div class="rc1 wd-100p card-bg-color" style="border-radius: 20px; padding-top: 0px !important;">
+                      <div class="wd-100p d-flex flex-column">
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div
+                              class="rkstatus d-flex flex-column align-items-center justify-content-center mg-r-10 mg-l-2"
+                              style="border-radius: 12px; background-color: #32ba9e; height: 50px; width: 60px;">
+                              <!-- <div class="tx-poppins tx-14">Kam</div> -->
+                              <div class="tx-poppins tx-20 tx-medium" style="font-weight: 600; color: white">31</div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                Parkir lapangan utama ITS sebelah utara
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                14.00 - 22.00 WIB
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div
+                              class="rkstatus d-flex flex-column align-items-center justify-content-center mg-r-10 mg-l-2"
+                              style="border-radius: 12px; background-color: #408bfc; height: 50px; width: 60px;">
+                              <!-- <div class="tx-poppins tx-14">Kam</div> -->
+                              <div class="tx-poppins tx-20 tx-medium" style="font-weight: 600; color: white">1</div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                Direktorat Pusat ITS
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                14.00 - 22.00 WIB
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div
+                              class="rkstatus d-flex flex-column align-items-center justify-content-center mg-r-10 mg-l-2"
+                              style="border-radius: 12px; background-color: #ff6370; height: 50px; width: 60px;">
+
+                              <div class="tx-poppins tx-20 tx-medium" style="font-weight: 600; color: white">2</div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-center"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                Tidak ada shift
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          <div class="d-flex align-items-center ht-100p pd-l-0">
+                            <div
+                              class="rkstatus d-flex flex-column align-items-center justify-content-center mg-r-10 mg-l-2"
+                              style="border-radius: 12px; background-color: #408bfc; height: 50px; width: 60px;">
+                              <!-- <div class="tx-poppins tx-14">Kam</div> -->
+                              <div class="tx-poppins tx-20 tx-medium" style="font-weight: 600; color: white">3</div>
+                            </div>
+                            <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                              style="min-height: 42px;">
+                              <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                Gerbang utama ITS
+                              </div>
+                              <div class="tx-poppins tx-14 tx-color-03">
+                                06.00 - 13.00 WIB
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ht-40"></div>
+                  <div class="wd-100p d-flex"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="d-lg-none wd-100p card static bd-0 mg-t-15 "
+              style="border-radius: 30px; padding: 0px !important;">
+              <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Perjalanan Dinas</div>
+                <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                  title="Menuju modul absensi"
+                  style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                  <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                </div>
+              </div>
+              <div class="wd-100p d-flex flex-column">
+                <div class="rc1 wd-100p ht-200"
+                  style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                </div>
+              </div>
+
+            </div>
             <!-- 
             <div class="wd-100p card static bd-0 mg-b-10 mg-t-10"
               style="padding: 0px !important; border-radius: 30px; background-color: white; transition: all 500ms ease-out;">
@@ -374,17 +575,83 @@
 
 
             <div class="wd-100p d-flex justify-content-end">
-              <div class="d-none d-lg-block wd-100p pd-r-15">
+              <div class="d-none d-lg-block wd-100p">
                 <div class="tx-poppins tx-26 tx-medium mg-b-10 pd-l-5" style="letter-spacing: -1px;">
                   Informasi
                 </div>
-                <div class="wd-100p bd-0 d-flex" style="border-radius: 30px; margin: 0px; padding: 0px;">
-                  <div class="wd-100p pd-r-8">
-                    <div class="card static bd-0" style=" border-radius: 30px; height: 250px;"></div>
+                <div class="wd-100p bd-0 row row-xs mg-0 pd-r-6" style="border-radius: 30px; margin: 0px;">
+                  <div class="wd-100p col-6 mg-b-10">
+                    <div class="card static bd-0" style=" border-radius: 30px; box-shadow: none !important;">
+                      <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                        <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Presensi</div>
+                        <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                          title="Menuju modul absensi"
+                          style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                          <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                        </div>
+                      </div>
+                      <div class="wd-100p d-flex flex-column" >
+                        <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
+                          style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="wd-100p pd-l-8">
-                    <div class="card static bd-0" style=" border-radius: 30px; height: 250px;"></div>
+
+                 <div class="wd-100p col-6 mg-b-10">
+                    <div class="card static bd-0" style=" border-radius: 30px;">
+                      <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                        <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Cuti</div>
+                        <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                          title="Menuju modul absensi"
+                          style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                          <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                        </div>
+                      </div>
+                      <div class="wd-100p d-flex flex-column">
+                        <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
+                          style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                        </div>
+                      </div>
+                    </div>
                   </div>
+
+                  <div class="wd-100p col-6 mg-b-10">
+                    <div class="card static bd-0" style=" border-radius: 30px;">
+                      <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                        <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Shift</div>
+                        <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                          title="Menuju modul absensi"
+                          style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                          <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                        </div>
+                      </div>
+                      <div class="wd-100p d-flex flex-column" >
+                        <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
+                          style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="wd-100p col-6 mg-b-10">
+                    <div class="card static bd-0" style=" border-radius: 30px;">
+                      <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
+                        <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Perjalanan Dinas</div>
+                        <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
+                          title="Menuju modul absensi"
+                          style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
+                          <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
+                        </div>
+                      </div>
+                      <div class="wd-100p d-flex flex-column" >
+                        <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
+                          style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
               <div class="d-flex flex-column">
@@ -456,30 +723,6 @@
                     </div>
                   </div>
 
-                  <!-- <div class="pd-x-15 pd-b-15 pd-t-15">
-                    <div
-                      class="btn presenbtn pd-0 mg-0 d-flex flex-column justify-content-center align-items-start pos-relative"
-                      style="border-radius: 20px; background-color: #eec2c5; width: 100%; overflow: hidden; border: solid 2px white">
-                      <div class="wd-100p d-flex flex-column justify-content-center align-items-center"
-                        style="z-index: 20 !important; padding-top: 11px; padding-bottom: 11px;">
-                        <div class="tx-poppins tx-18 presentx"
-                          style="letter-spacing: -1px; color: white; line-height: 1.2;">Segera mulai kerja!
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                          <ion-icon name="time" class="tx-16 mg-r-4 pd-b-1" style="color: rgba(255,255,255,0.9);">
-                          </ion-icon>
-                          <div class="tx-poppins tx-14 tx-light presentxsub" style="color: rgba(255,255,255, 0.9);">6
-                            menit
-                            sebelum
-                            terlambat</div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex flex-column justify-content-center align-items-center pos-absolute presenpercent"
-                        style="background-color: #ff6f7a; padding-top: 11px; padding-bottom: 15px; width: 60%; height: 100%; transition: all 500ms ease-out;">
-                      </div>
-                    </div>
-                  </div> -->
                   <div class="pd-x-15 pd-b-15 pd-t-15">
                     <div
                       class="btn mainpresenbtn presenbtn pd-0 mg-0 d-flex flex-column justify-content-center align-items-start pos-relative"
@@ -545,10 +788,10 @@
               </div> -->
                 </div>
 
-                <div class="d-none d-lg-block wd-100p card static bd-0 mg-t-15"
+                <div class="d-none d-lg-block wd-100p card static bd-0 mg-t-10"
                   style="border-radius: 30px; padding: 0px !important; max-width: 370px; min-width: 370px;">
                   <div class="wd-100p pd-20 d-flex justify-content-between align-items-center">
-                    <div class="tx-poppins tx-22 tx-medium" style="letter-spacing: -1px;">Rencana Kerja</div>
+                    <div class="tx-poppins tx-22 tx-medium" style="letter-spacing: -1px;">Realisasi Kerja</div>
                     <div class="btn ht-40 wd-40 card-bg-color d-flex justify-content-center align-items-center"
                       title="Menuju modul absensi"
                       style="border-radius: 12px; box-shadow: rgba(17, 12, 46, 0.045) 0px 8px 30px 0px; padding: 8px; color: black; z-index: 10 !important;">
@@ -556,8 +799,144 @@
                     </div>
                   </div>
                   <div class="wd-100p d-flex flex-column">
-                    <div class="rc1 wd-100p ht-350 card-bg-color"
-                      style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.07) 0px 12px 45px 0px;"></div>
+                    <div class="wd-100p"
+                      style="border-radius: 30px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
+                      <div class="wd-100p d-flex flex-column mg-b-5">
+                        <div class="rc1 wd-100p card-bg-color"
+                          style="border-radius: 20px; padding-top: 0px !important;">
+                          <div class="wd-100p d-flex flex-column">
+
+                            <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              <div class="d-flex align-items-center ht-100p pd-l-0">
+                                <div
+                                  class="rkstatus d-flex align-items-center justify-content-around mg-r-10 mg-l-2 pd-x-8"
+                                  style="border-radius: 12px; background-color: #e7f0ff; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                </div>
+                                <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                                  style="min-height: 42px;">
+                                  <div class="tx-poppins tx-medium tx-16">
+                                    Template myITS Worktime
+                                  </div>
+                                  <div class="tx-poppins tx-14 tx-color-03">
+                                    Dalam Pengerjaan
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              <div class="d-flex align-items-center ht-100p pd-l-0">
+                                <div
+                                  class="rkstatus d-flex align-items-center justify-content-around mg-r-10 mg-l-2 pd-x-8"
+                                  style="border-radius: 12px; background-color: #e7f0ff; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                  <div class="ht-8 wd-8" style="background-color: #408bfc; border-radius: 50%;"></div>
+                                </div>
+                                <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                                  style="min-height: 42px;">
+                                  <div class="tx-poppins tx-medium tx-16">
+                                    Website myITS Design System
+                                  </div>
+                                  <div class="tx-poppins tx-14 tx-color-03">
+                                    Dalam Pengerjaan
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              <div class="d-flex align-items-center ht-100p pd-l-0">
+                                <div
+                                  class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8"
+                                  style="border-radius: 12px; background-color: #fff6d9; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                                  <div class="wd-6 mg-r-2"
+                                    style="background-color: #ed9d59da; border-radius: 4px; height: 16px;"></div>
+                                  <div class="wd-6 mg-l-2"
+                                    style="background-color: #ed9d59da; border-radius: 4px; height: 16px;"></div>
+                                </div>
+                                <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                                  style="min-height: 42px;">
+                                  <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                    NEXT.js Frontend Interaction Space Management
+                                  </div>
+                                  <div class="tx-poppins tx-14 tx-color-03">
+                                    Belum Dimulai
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              <div class="d-flex align-items-center ht-100p pd-l-0">
+                                <div
+                                  class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
+                                  style="border-radius: 12px; background-color: #cbf8ef; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                                  <div class="wd-6 mg-r-2 pos-absolute"
+                                    style="top: 21px; left: 16px; background-color: #32ba9e; border-radius: 4px; height: 12px; transform: rotate(-45deg)">
+                                  </div>
+                                  <div class="wd-6 mg-l-2 pos-absolute"
+                                    style="right: 18px; background-color: #32ba9e; border-radius: 4px; height: 23px; transform: rotate(45deg)">
+                                  </div>
+                                </div>
+                                <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                                  style="min-height: 42px;">
+                                  <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                    Template myITS Space Management
+                                  </div>
+                                  <div class="tx-poppins tx-14 tx-color-03">
+                                    Selesai
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              <div class="d-flex align-items-center pd-l-0">
+                                <div
+                                  class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
+                                  style="border-radius: 12px; background-color: #cbf8ef; height: 50px; width: 50px; min-width: 50px; min-height: 50px;">
+                                  <div class="wd-6 mg-r-2 pos-absolute"
+                                    style="top: 21px; left: 16px; background-color: #32ba9e; border-radius: 4px; height: 12px; transform: rotate(-45deg)">
+                                  </div>
+                                  <div class="wd-6 mg-l-2 pos-absolute"
+                                    style="right: 18px; background-color: #32ba9e; border-radius: 4px; height: 23px; transform: rotate(45deg)">
+                                  </div>
+                                </div>
+                                <div class="wd-100p pd-x-10 d-flex flex-column justify-content-between"
+                                  style="min-height: 42px;">
+                                  <div class="tx-poppins tx-medium tx-16 mg-b-2" style="line-height: 1.1;">
+                                    myITS Design System Figma
+                                  </div>
+                                  <div class="tx-poppins tx-14 tx-color-03 mg-t-2">
+                                    Selesai
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="btn wd-100p pd-t-5 pd-b-15 d-flex justify-content-center align-items-center"
+                        style="color: black;">
+                        <div class="d-flex justify-content-center align-items-center mg-r-8"
+                          style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
+                          <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
+                        </div>
+                        <div class="tx-poppins tx-14 tx-medium">
+                          Tambah RK Baru
+                        </div>
+                      </div>
+                      <div class="wd-100p d-flex"></div>
+                    </div>
                   </div>
                 </div>
 
@@ -598,6 +977,44 @@
   <!-- Scripts -->
   <?php include "../partial/script.php" ?>
 
+  <script>
+    $(function () {
+      'use strict'
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+    })
+  </script>
 
   <script>
     $(function () {
@@ -605,14 +1022,14 @@
       $(".mainpresenbtn").click(function () {
 
         if ($(this).hasClass("presenbtn")) {
-          $(".presenbg").css("background-color", "#fc5260")
-          $(".presenpercent").css("width", "100%").css("background-color", "#fc5260")
+          $(".presenbg").css("background-color", "white")
+          $(".presenpercent").css("width", "100%").css("background-color", "#ff6370")
           $(".presentx").text("Akhiri kerja");
-          $(".presentxsub").text("Akhiri kerja anda sekarang");
+          $(".presentxsub").text("Akhiri kerja anda hari ini");
           $(this).removeClass("presenbtn").addClass("endpresenbtn")
         } else {
           $(".presenbg").css("background-color", "white")
-          $(".presenpercent").css("width", "100%").css("background-color", "#0168fa")
+          $(".presenpercent").css("width", "100%").css("background-color", "#408bfc")
           $(".presentx").text("Mulai kerja");
           $(".presentxsub").text("Waktu kerja normal");
           $(this).removeClass("endpresenbtn").addClass("presenbtn");
