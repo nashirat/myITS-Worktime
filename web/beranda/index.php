@@ -1102,8 +1102,9 @@
         let h = today.getHours();
         let m = today.getMinutes();
         let s = today.getSeconds();
-        const early = 450;
-        const late = 465;
+        const early = 555;
+        const late = 570;
+        console.log(minuteToday)
         wtt = setTimeout(checkLateTime, 1000)
 
 
@@ -1153,6 +1154,7 @@
       function spin() {
         $(".mainpresenbtn").addClass("button--loading")
         $(".presenbtncontent").css("opacity", "0")
+        $(".presenpercent").css("width", "100%")
       }
 
       function checkMark() {

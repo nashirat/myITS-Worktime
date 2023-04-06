@@ -85,7 +85,7 @@
             </div>
 
             <div class="pos-relative">
-                <li class="nav-item" title=""><a href="../reservasi"
+                <li class="nav-item" title=""><a href="../realisasi"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/reservasi.png" class="wd-20 mg-r-15"><span
                             class="tx-poppins  text-truncate">Realisasi Kerja</span></a>
@@ -95,7 +95,7 @@
 
 
             <div class="pos-relative">
-                <li class="nav-item" title=""><a href="../reservasi"
+                <li class="nav-item" title=""><a href="../cuti"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/reservasi.png" class="wd-20 mg-r-15"><span
                             class="tx-poppins  text-truncate">Cuti</span></a>

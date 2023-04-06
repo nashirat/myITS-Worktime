@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <?php include "../partial/head.php"?>
+  <?php include "../partial/head.php" ?>
 
   <style>
     @media (max-width: 768px) {
@@ -15,11 +15,11 @@
 
 </head>
 
-<?php include "../partial/navbar.php"?>
-<?php include "../partial/backtotop.php"?>
+<?php include "../partial/navbar.php" ?>
+<?php include "../partial/backtotop.php" ?>
 
 <body class="mn-ht-100v d-flex flex-column">
-  <?php include "../partial/loading.php"?>
+  <?php include "../partial/loading.php" ?>
 
 
   <!-- DO NOT CHANGE -->
@@ -27,7 +27,7 @@
     <div class="content-body pd-0 mg-0 d-flex justify-content-center align-items-start "
       style="min-height: calc(100vh - 80px); overflow: visible">
       <div class="pd-0 mg-0 d-flex justify-content-center align-items-start container-big">
-        <?php include "../partial/sidebar.php"?>
+        <?php include "../partial/sidebar.php" ?>
         <div class="flex-1 mg-0 pd-x-10 mg-xl-r-50  pd-lg-x-0 pd-xl-x-0 bg-0 pos-relative"
           style="background: none; position: relative;" id="content">
           <div class="d-flex mg-t-90 wd-100p justify-content-between align-items-start pos-relative"
@@ -40,50 +40,59 @@
                 <!-- DO NOT CHANGE END -->
                 <!-- Write Content Starts Here -->
 
-                <div class="wd-100p pd-x-5" style="margin-bottom: 40px;">
-                  <div class="wd-100p content-div tx-color-02 pd-t-3" id="overview">
+                <div class="wd-100p pd-x-5 d-flex justify-content-between align-items-center"
+                  style="margin-bottom: 40px;">
+                  <div class="content-div tx-color-02 pd-t-3">
                     <div>
-                      <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0">Data Reservasi Area</div>
+                      <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0">Manajemen Cuti</div>
                     </div>
-                    <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Data reservasi pada area dibawah wewenang anda</div>
+                    <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Buat dan lihat data cuti anda</div>
                   </div>
+                  <a href="wizard-cuti.php">
+                    <div class="btn btn-primary pd-x-20 pd-y-10" style="border-radius: 15px;">
+                      <div class="tx-poppins tx-14">Buat cuti baru</div>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="wd-100p pd-x-1 mg-b-5">
                   <div class="wd-100p pd-0 mg-0 row row-xs content-div">
-                  
-                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10" style="padding: 4px;">
+
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10"
+                      style="padding: 4px;">
                       <div class="rounded-its-10 wd-100p" style="height: 44px;">
                         <select id="unit-select" class="wd-100p ht-100p rounded-its-10 d-flex align-items-center"
                           padding-left: 12px;">
-                          <option value="">Waktu</option>
-                          <option value="dptsi">Hari ini</option>
-                          <option value="its">Minggu ini</option>
-                          <option value="dptsi">Bulan ini</option>
-                          <option value="riscen">Tahun ini</option>
-                          <option value="its">Semua</option>
+                          <option value="">Bulan</option>
+                          <option value="januari">Januari</option>
+                          <option value="februari">Februari</option>
+                          <option value="maret">Maret</option>
+                          <option value="april">April</option>
+                          <option value="">Semua</option>
                         </select>
                       </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10" style="padding: 4px;">
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10"
+                      style="padding: 4px;">
                       <div class="rounded-its-10 wd-100p" style="height: 44px;">
                         <select id="area-select" class="wd-100p ht-100p rounded-its-10 d-flex align-items-center"
                           padding-left: 12px;">
-                          <option value="">Jenis area</option>
-                          <option value="dptsi">Ruang rapat</option>
-                          <option value="riscen">Auditorium</option>
-                          <option value="its">Ruang kantor</option>
-                          <option value="its">Fas. Olaharaga</option>
+                          <option value="">Tahun</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="">Semua</option>
                         </select>
                       </div>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10" style="padding: 4px;">
+                    <div class="col-12 col-md-6 col-lg-2 col-xl-2 col-mmxl-2 col-mxl-2 rounded-its-10"
+                      style="padding: 4px;">
                       <div class="rounded-its-10 wd-100p" style="height: 44px;">
                         <select id="gedung-select" class="wd-100p ht-100p rounded-its-10 d-flex align-items-center"
                           padding-left: 12px;">
-                          <option value="">Nama Gedung</option>
+                          <option value="">Jenis</option>
                           <option value="dptsi">Tower 1</option>
                           <option value="riscen">Research Center</option>
                           <option value="riscen">Tower 2</option>
@@ -108,19 +117,19 @@
                       </div>
                     </div>
 
-                    
+
 
                   </div>
                 </div>
 
                 <div class="pd-x-5 mg-t-10 mg-t-lg-0" style=" margin-top: -2px !important;">
-                <div class="wd-100p rounded-its-10 pd-b-10 card static bd-0">
-                  <div class="rounded-its-10 d-flex wd-100p mg-l-4 pd-20 bd-0 table-container"
-                    style=" overflow: auto;">
-                    <?php include "./table.php"?>
+                  <div class="wd-100p rounded-its-10 pd-b-10 card static bd-0">
+                    <div class="rounded-its-10 d-flex wd-100p mg-l-4 pd-20 bd-0 table-container"
+                      style=" overflow: auto;">
+                      <?php include "./table.php" ?>
 
+                    </div>
                   </div>
-                </div>
                 </div>
                 <!-- Write content end here -->
               </div>
@@ -158,13 +167,13 @@
       'use strict'
 
       $('#unit-select').select2({
-        placeholder: 'Waktu',
+        placeholder: 'Bulan',
       });
       $('#area-select').select2({
-        placeholder: 'Jenis area'
+        placeholder: 'Tahun'
       });
       $('#gedung-select').select2({
-        placeholder: 'Nama gedung'
+        placeholder: 'Jenis'
       });
       $('#pengelola-select').select2({
         placeholder: 'Pengelola area'
@@ -222,7 +231,7 @@
       $('#daftarareatable_filter').css("display", "none");
       $('#daftarareatable_info').css("display", "none");
 
-      $("#search-key").on("keyup", function() {
+      $("#search-key").on("keyup", function () {
         $('#daftarareatable').DataTable().search($("#search-key").val()).draw();
       })
       $('#custom-search').on('keyup click', function () {
