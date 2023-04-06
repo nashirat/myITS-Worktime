@@ -64,7 +64,7 @@
                 <li class="nav-item" title=""><a id="kelolaruang-select" href="../kelolaruang"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/kelolaruang.png" class="wd-20 mg-r-15"><span
-                            class="tx-poppins  text-truncate">Kelola Ruang</span></a>
+                            class="tx-poppins  text-truncate">Presensi</span></a>
                 </li>
                 <button
                     class="btn btn-icon btn-sm btn-its-custom-1 rounded-its-20p btn-side d-flex align-items-center pos-absolute"
@@ -80,28 +80,47 @@
                 <li class="nav-item"><a href="../kelolaruang/tambaharea.php"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><span
                             class="tx-poppins tx-medium text-truncate mg-l-35">Tambah Area</span></a></li>
-               
+
 
             </div>
+
             <div class="pos-relative">
                 <li class="nav-item" title=""><a href="../reservasi"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/reservasi.png" class="wd-20 mg-r-15"><span
-                            class="tx-poppins  text-truncate">Reservasi</span></a>
+                            class="tx-poppins  text-truncate">Realisasi Kerja</span></a>
                 </li>
-        
+
+            </div>
+
+
+            <div class="pos-relative">
+                <li class="nav-item" title=""><a href="../reservasi"
+                        class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
+                            src="../../assets/img/icon/reservasi.png" class="wd-20 mg-r-15"><span
+                            class="tx-poppins  text-truncate">Cuti</span></a>
+                </li>
+
             </div>
 
             <div class="pos-relative">
                 <li class="nav-item" title=""><a href="../rekap"
                         class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
                             src="../../assets/img/icon/rekap.png" class="wd-20 mg-r-15"><span
-                            class="tx-poppins  text-truncate">Rekap</span></a>
+                            class="tx-poppins  text-truncate">Shift</span></a>
                 </li>
-              
+
             </div>
-            
-            
+            <div class="pos-relative">
+                <li class="nav-item" title=""><a href="../rekap"
+                        class="nav-link-its nav-link-its-desktop d-flex justify-content-start align-items-center"><img
+                            src="../../assets/img/icon/rekap.png" class="wd-20 mg-r-15"><span
+                            class="tx-poppins  text-truncate">Perjalanan Dinas</span></a>
+                </li>
+
+            </div>
+
+
         </ul>
     </div>
     <!-- Menu Items End -->

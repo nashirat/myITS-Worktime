@@ -71,7 +71,7 @@
               </div>
               <div class="wd-100p d-flex flex-column card-bg-color"
                 style="background-color: white; border-radius: 20px; padding: 20px; box-shadow: rgba(17, 12, 46, 0.07) 0px 14px 40px 0px;">
-                <div class="wd-100p d-flex justify-content-between align-items-center">
+                <div class="wd-100p d-flex justify-content-between align-items-center" style="min-height: 42px;">
                   <div class="d-flex flex-column">
                     <div class="tx-poppins tx-14 tx-medium">Mulai kerja</div>
                     <div class="tx-poppins tx-14 startworktimeplus"></div>
@@ -79,18 +79,20 @@
                   <div class="tx-poppins tx-22 tx-medium startworktime" style="letter-spacing: -1px;"> --.--
                   </div>
                 </div>
-                <div class="wd-100p d-flex justify-content-between align-items-center mg-t-10">
+                <div class="wd-100p d-flex justify-content-between align-items-center mg-t-10"
+                  style="min-height: 42px;">
                   <div class="d-flex flex-column">
                     <div class="tx-poppins tx-14 tx-medium">Selesai kerja</div>
-                    <div class="tx-poppins tx-14"></div>
+                    <div class="tx-poppins tx-14 endworktimeplus"></div>
                   </div>
-                  <div class="tx-poppins tx-22 tx-medium" style="letter-spacing: -1px;">
+                  <div class="tx-poppins tx-22 tx-medium endworktime" style="letter-spacing: -1px;">
                     --.--
                   </div>
                 </div>
-                <div class="wd-100p d-flex justify-content-between align-items-center mg-t-10">
+                <div class="wd-100p d-flex justify-content-between align-items-center mg-t-10"
+                  style="min-height: 42px;">
                   <div class="d-flex flex-column">
-                    <div class="tx-poppins tx-14 tx-medium">Lama kerja</div>
+                    <div class="tx-poppins tx-14 tx-medium">Durasi kerja</div>
                   </div>
                   <div class="tx-poppins tx-22 tx-medium worklong" style="letter-spacing: -1px;">
                     --.--
@@ -124,13 +126,13 @@
                 <div
                   class="btn mainpresenbtn presenbtn pd-0 mg-0 d-flex flex-column justify-content-center align-items-start pos-relative"
                   style="border-radius: 20px; background-color: #eec2c5; width: 100%; overflow: hidden; border: solid 2px white">
-                  <div class="wd-100p d-flex flex-column justify-content-center align-items-center"
+                  <div class="wd-100p d-flex flex-column justify-content-center align-items-center presenbtncontent"
                     style="z-index: 20 !important; padding-top: 11px; padding-bottom: 11px;">
                     <div class="tx-poppins tx-18 presentx"
                       style="letter-spacing: -1px; color: white; line-height: 1.2;">Mulai kerja
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
-                      <ion-icon name="time" class="tx-16 mg-r-4 pd-b-1" style="color: rgba(255,255,255,0.9);">
+                      <ion-icon name="time" class="tx-16 mg-r-4 pd-b-1 ionicon" style="color: rgba(255,255,255,0.9);">
                       </ion-icon>
                       <div class="tx-poppins tx-14 tx-light presentxsub" style="color: rgba(255,255,255, 0.9);">Waktu
                         masuk normal</div>
@@ -289,7 +291,7 @@
                           </div>
                         </div>
                         <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
-                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0;">
                           <div class="d-flex align-items-center pd-l-0">
                             <div
                               class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
@@ -316,17 +318,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="btn wd-100p pd-t-5 pd-b-15 d-flex justify-content-center align-items-center"
-                    style="color: black;">
-                    <div class="d-flex justify-content-center align-items-center mg-r-8"
-                      style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
-                      <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
-                    </div>
-                    <div class="tx-poppins tx-14 tx-medium">
-                      Tambah RK Baru
-                    </div>
+
+                </div>
+                <div class="btn wd-100p pd-20 d-flex justify-content-center align-items-center" style="color: black;">
+                  <div class="d-flex justify-content-center align-items-center mg-r-8"
+                    style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
+                    <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
                   </div>
-                  <div class="wd-100p d-flex"></div>
+                  <div class="tx-poppins tx-14 tx-medium">
+                    Tambah RK Baru
+                  </div>
                 </div>
               </div>
             </div>
@@ -509,7 +510,7 @@
                         </div>
 
                         <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
-                          style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                          style="padding: 20px; text-align: left; color: black; border-radius: 0;">
                           <div class="d-flex align-items-center ht-100p pd-l-0">
                             <div
                               class="rkstatus d-flex flex-column align-items-center justify-content-center mg-r-10 mg-l-2"
@@ -532,7 +533,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="ht-40"></div>
                   <div class="wd-100p d-flex"></div>
                 </div>
               </div>
@@ -590,7 +590,7 @@
                           <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
                         </div>
                       </div>
-                      <div class="wd-100p d-flex flex-column" >
+                      <div class="wd-100p d-flex flex-column">
                         <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
                           style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
                         </div>
@@ -598,7 +598,7 @@
                     </div>
                   </div>
 
-                 <div class="wd-100p col-6 mg-b-10">
+                  <div class="wd-100p col-6 mg-b-10">
                     <div class="card static bd-0" style=" border-radius: 30px;">
                       <div class="wd-100p pd-x-20 pd-t-20 pd-b-15 d-flex justify-content-between align-items-center">
                         <div class="tx-poppins tx-20 tx-medium" style="letter-spacing: -1px;">Cuti</div>
@@ -626,7 +626,7 @@
                           <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
                         </div>
                       </div>
-                      <div class="wd-100p d-flex flex-column" >
+                      <div class="wd-100p d-flex flex-column">
                         <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
                           style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
                         </div>
@@ -644,7 +644,7 @@
                           <ion-icon class="tx-16 wd-20 ht-30" name="chevron-forward"></ion-icon>
                         </div>
                       </div>
-                      <div class="wd-100p d-flex flex-column" >
+                      <div class="wd-100p d-flex flex-column">
                         <div class="d-flex wd-100p ht-200 justify-content-between align-items-start pd-20"
                           style="border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.04) 0px 4px 50px 0px; background-color: white;">
                         </div>
@@ -715,7 +715,7 @@
                     </div>
                     <div class="wd-100p d-flex justify-content-between align-items-center mg-t-10">
                       <div class="d-flex flex-column">
-                        <div class="tx-poppins tx-14 tx-medium">Lama kerja</div>
+                        <div class="tx-poppins tx-14 tx-medium">Durasi kerja</div>
                       </div>
                       <div class="tx-poppins tx-22 tx-medium" style="letter-spacing: -1px;">
                         --.--
@@ -727,7 +727,7 @@
                     <div
                       class="btn mainpresenbtn presenbtn pd-0 mg-0 d-flex flex-column justify-content-center align-items-start pos-relative"
                       style="border-radius: 20px; background-color: #eec2c5; width: 100%; overflow: hidden; border: solid 2px white">
-                      <div class="wd-100p d-flex flex-column justify-content-center align-items-center"
+                      <div class="wd-100p d-flex flex-column justify-content-center align-items-center presenbtncontent"
                         style="z-index: 20 !important; padding-top: 11px; padding-bottom: 11px;">
                         <div class="tx-poppins tx-18 presentx"
                           style="letter-spacing: -1px; color: white; line-height: 1.2;">Mulai kerja
@@ -898,7 +898,7 @@
                               </div>
                             </div>
                             <div class="btn wd-100p" data-toggle="modal" data-target="#modalRK"
-                              style="padding: 20px; text-align: left; color: black; border-radius: 0; border-bottom: 1px solid #f0f0f0">
+                              style="padding: 20px; text-align: left; color: black; border-radius: 0;">
                               <div class="d-flex align-items-center pd-l-0">
                                 <div
                                   class="rkstatus d-flex align-items-center justify-content-center mg-r-10 mg-l-2 pd-x-8 pos-relative"
@@ -925,17 +925,17 @@
                           </div>
                         </div>
                       </div>
-                      <div class="btn wd-100p pd-t-5 pd-b-15 d-flex justify-content-center align-items-center"
-                        style="color: black;">
-                        <div class="d-flex justify-content-center align-items-center mg-r-8"
-                          style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
-                          <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
-                        </div>
-                        <div class="tx-poppins tx-14 tx-medium">
-                          Tambah RK Baru
-                        </div>
+
+                    </div>
+                    <div class="btn wd-100p pd-20 d-flex justify-content-center align-items-center"
+                      style="color: black;">
+                      <div class="d-flex justify-content-center align-items-center mg-r-8"
+                        style="background-color: #408bfc; border-radius: 50%; height: 20px; width: 20px;">
+                        <ion-icon name="add" class="tx-14" style="color: white;"></ion-icon>
                       </div>
-                      <div class="wd-100p d-flex"></div>
+                      <div class="tx-poppins tx-14 tx-medium">
+                        Tambah RK Baru
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1019,32 +1019,18 @@
   <script>
     $(function () {
       'use strict'
-      $(".mainpresenbtn").click(function () {
-
-        if ($(this).hasClass("presenbtn")) {
-          $(".presenbg").css("background-color", "white")
-          $(".presenpercent").css("width", "100%").css("background-color", "#ff6370")
-          $(".presentx").text("Akhiri kerja");
-          $(".presentxsub").text("Akhiri kerja anda hari ini");
-          $(this).removeClass("presenbtn").addClass("endpresenbtn")
-        } else {
-          $(".presenbg").css("background-color", "white")
-          $(".presenpercent").css("width", "100%").css("background-color", "#408bfc")
-          $(".presentx").text("Mulai kerja");
-          $(".presentxsub").text("Waktu kerja normal");
-          $(this).removeClass("endpresenbtn").addClass("presenbtn");
-        }
-      })
-
-    })
-  </script>
-
-  <script>
-    $(function () {
-      'use strict'
 
       let minuteToday;
       let minuteStartWork;
+      let minuteEndWork;
+      let wt;
+      let wtt;
+      const alrdyPres = false;
+
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
 
       function getDate() {
         const weekdays = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
@@ -1069,20 +1055,38 @@
         minuteToday = Math.floor(h * 60) + parseInt(m);
       }
 
+      function endTime() {
+        h = checkTime(h);
+        m = checkTime(m);
+        s = checkTime(s);
+        $('.endworktime').html(h + "." + m + " WIB");
+        minuteEndWork = Math.floor(h * 60) + parseInt(m);
+        let endTimeSurplus = minuteEndWork - 900;
+        if (endTimeSurplus < 0) {
+          $('.endworktimeplus').html(endTimeSurplus + " menit");
+        } else {
+          $('.endworktimeplus').html("+" + endTimeSurplus + " menit");
+        }
+      }
+
       function startWork() {
         const start = new Date()
         let h = start.getHours();
         let m = start.getMinutes();
         // dev
-        h = 7;
-        m = 32;
+        h = checkTime(7);
+        m = checkTime(35);
         // prod
         // h = checkTime(h);
         // m = checkTime(m);
         $('.startworktime').html(h + "." + m + " WIB");
         minuteStartWork = Math.floor(h * 60) + parseInt(m);
         let startTimeSurplus = minuteStartWork - 450;
-        $('.startworktimeplus').html("+" + startTimeSurplus + " menit");
+        if (startTimeSurplus < 0) {
+          $('.startworktimeplus').html(startTimeSurplus + " menit");
+        } else {
+          $('.startworktimeplus').html("+" + startTimeSurplus + " menit");
+        }
       }
 
       function workLong() {
@@ -1090,7 +1094,53 @@
         let workHour = Math.floor(howLong / 60)
         let workMinute = Math.floor(howLong % 60)
         $('.worklong').html(workHour + " jam " + workMinute + " menit")
-        setTimeout(workLong, 1000);
+        wt = setTimeout(workLong, 1000);
+      }
+
+      function checkLateTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        const early = 450;
+        const late = 465;
+        wtt = setTimeout(checkLateTime, 1000)
+
+
+        if (!alrdyPres) {
+          if ((minuteToday <= early)) {
+            $(".presenpercent").css("width", "100%").css("background-color", "#408bfc")
+            $(".presentx").text("Mulai kerja");
+            $(".presentxsub").text("Waktu masuk normal");
+          }
+          else if ((minuteToday > early) && (minuteToday <= late)) {
+            let tolTime = minuteToday - early;
+            let x = (100 / 15) * (tolTime - 15) + 100;
+            let btWidth = x + "%"
+            $(".presenpercent").css("width", btWidth).css("background-color", "#ff6370")
+            $(".presentx").text("Segera mulai kerja!");
+            $(".presentxsub").text((15 - tolTime) + " menit sebelum terlambat");
+          }
+          else if ((minuteToday > late)) {
+            let tolTime = minuteToday - early;
+            let x = (100 / 15) * (tolTime - 15) + 100;
+            let btWidth = x + "%"
+            $(".presenpercent").css("width", "100%").css("background-color", "#ff6370")
+            $(".presentx").text("Mulai kerja sekarang!");
+            $(".presentxsub").text((tolTime - 15) + " menit terlambat");
+          }
+        } else {
+          clearTimeout(wtt);
+          $(".mainpresenbtn").css("pointer-events", "none")
+          $(".presenpercent").css("width", "100%").css("background-color", "grey").css("pointer-events", "none")
+          $(".presentx").text("Anda telah mengakhiri kerja");
+          $(".presentxsub").text("");
+        }
+      }
+
+      function endTimeout() {
+        clearTimeout(wt);
+        clearTimeout(wtt);
       }
 
       function checkTime(i) {
@@ -1100,17 +1150,73 @@
         return i;
       }
 
+      function spin() {
+        $(".mainpresenbtn").addClass("button--loading")
+        $(".presenbtncontent").css("opacity", "0")
+      }
+
+      function checkMark() {
+        $(".mainpresenbtn").removeClass("button--loading")
+        $(".presenpercent").css("width", "100%").css("background-color", "#32ba9e")
+        $(".mainpresenbtn").addClass("checkmark").addClass("draw")
+        $(".checkmark").toggle()
+      }
+
+      function changeColorRed() {
+        startWork();
+        workLong();
+        $(".mainpresenbtn").removeClass("checkmark").removeClass("draw")
+        $(".presenbtncontent").css("opacity", "1")
+        $(".presenbg").css("background-color", "white")
+        $(".presenpercent").css("width", "100%").css("background-color", "#ff6370")
+        $(".presentx").text("Akhiri kerja");
+        $(".presentxsub").text("Akhiri kerja anda hari ini");
+        $(".mainpresenbtn").removeClass("presenbtn").addClass("endpresenbtn")
+      }
+
+      function changeButtonDone() {
+        $(".mainpresenbtn").removeClass("checkmark").removeClass("draw")
+        $(".presenbtncontent").css("opacity", "1")
+        $(".mainpresenbtn").css("pointer-events", "none")
+        $(".presenpercent").css("width", "100%").css("background-color", "grey").css("pointer-events", "none")
+        $(".presentx").text("Kerja diakhiri")
+        $(".ionicon").attr("name", "happy")
+        $(".presentxsub").text("Selamat beristirahat")
+
+      }
+
       $(window).on('load', function () {
         startTime();
         getDate();
-        $('.presenbtn').click(function () {
-          startWork();
-          workLong();
+        checkLateTime();
+
+        $(".mainpresenbtn").click(function () {
+          if ($(this).hasClass("presenbtn")) {
+            clearTimeout(wtt);
+            spin();
+            // settimeout cuma dipake buat simulasi animasi
+            setTimeout(function () {
+              checkMark();
+            }, 2200);
+            setTimeout(function () {
+              changeColorRed();
+            }, 4000);
+          } else {
+            endTime();
+            endTimeout();
+            spin();
+            // settimeout cuma dipake buat simulasi animasi
+            setTimeout(function () {
+              checkMark();
+            }, 1200);
+            setTimeout(function () {
+              changeButtonDone();
+            }, 3000);
+          }
         })
       })
     })
   </script>
-
 
   <script>
     $(function () {
@@ -1133,10 +1239,9 @@
       $('.df-example .btn-danger').tooltip({
         template: '<div class="tooltip tooltip-danger" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
       })
-
-
     });
   </script>
+
   <script>
     function filter1() {
       var input = document.getElementById("search1");
@@ -1152,6 +1257,7 @@
       }
     }
   </script>
+
   <script>
     function filter2() {
       var input = document.getElementById("search2");
@@ -1168,7 +1274,6 @@
     }
   </script>
   <!-- Scripts end -->
-
 
 </body>
 <!-- Body End -->
