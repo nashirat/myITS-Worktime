@@ -40,8 +40,20 @@
                 <!-- DO NOT CHANGE END -->
                 <!-- Write Content Starts Here -->
 
+                <!-- Cuti Tahunan
+
+Cuti Besar
+
+Cuti Sakit
+
+Cuti Melahirkan
+
+Cuti Karena Alasan Penting
+
+Cuti di Luar Tanggungan Negara -->
+
                 <div class="wd-100p pd-x-5 d-flex justify-content-between align-items-center"
-                  style="margin-bottom: 40px;">
+                  style="margin-bottom: 20px;">
                   <div class="content-div tx-color-02 pd-t-3">
                     <div>
                       <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0">Pembuatan Data Cuti</div>
@@ -51,15 +63,38 @@
                 </div>
 
                 <div class="wd-100p pd-x-1 mg-b-5">
-                  <div class="wd-100p pd-0 mg-0 row row-xs content-div">
+                  <div class="wd-100p card static ht-500 bd-0 mg-0 pd-0">
+                    <div class="wd-100p ht-100p row row-xs" style="padding: 0px !important; margin: 0px !important;">
+                      <div class="col-3 pd-15 d-flex flex-column justify-content-center align-items-center"
+                        style="border-right: 1px solid #f4f4f4;">
 
-                    
+                        <div class="d-flex">
+                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                        </div>
+                        <div class="d-flex">
+                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                          <div class="tx-poppins tx-14">Isi detail cuti</div>
+                        </div>
+                        <div class="d-flex">
+                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                        </div>
+                        <div class="d-flex">
+                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                        </div>
+
+                      </div>
+                      <div class="col-9"></div>
+                    </div>
+
 
 
                   </div>
                 </div>
 
-                
+
                 <!-- Write content end here -->
               </div>
             </div>
