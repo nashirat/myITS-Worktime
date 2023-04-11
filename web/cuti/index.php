@@ -48,8 +48,9 @@
                     </div>
                     <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Buat dan lihat data cuti anda</div>
                   </div>
-                  <a href="wizard-cuti.php">
-                    <div class="btn btn-primary pd-x-20 pd-y-10" style="border-radius: 15px;">
+                  <a>
+                    <div class="btn btn-primary pd-x-20 pd-y-10" style="border-radius: 15px;" data-bs-toggle="modal"
+                      data-bs-target="#modalRK">
                       <div class="tx-poppins tx-14">Buat cuti baru</div>
                     </div>
                   </a>
@@ -131,6 +132,59 @@
                     </div>
                   </div>
                 </div>
+                <div class="modal fade" id="modalRK" tabindex="-1" role="dialog"
+                  aria-labelledby="exampleModalCenterTitle" data-backdrop="static" aria-hidden="true">
+                  <div class="modal-dialog modal-fullscreen modal-fullscreen-its">
+                    <div class="modal-content bg-color pd-20">
+                      <div class="d-flex justify-content-center tx-poppins tx-36 tx-medium mg-t-80 wd-100p">
+                        Pembuatan Cuti Baru
+                      </div>
+                      <div class="d-flex justify-content-center tx-poppins tx-16 mg-b-20 wd-100p">
+                        Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
+                      </div>
+
+                      <!-- <div class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center mg-t-10 mg-b-30">
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Tahunan</div></div>
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Besar</div></div>
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Sakit</div></div>
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Melahirkan</div></div>
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Alasan Penting</div></div>
+                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti di Luar Tanggungan Negara</div></div>
+                  </div> -->
+
+                      <div class="wd-100p d-flex justify-content-center mg-b-30">
+                        <div class="mx-wd-550 ht-300 bd" style="border-radius: 20px;">
+
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="wd-100p d-flex mg-t-5 justify-content-center">
+                        <!-- <button class="btn btn-text-dark">
+                          <div class="tx-poppins tx-14 tx-medium" data-bs-dismiss="modal">Batal</div>
+                        </button> -->
+                        <button class="btn btn-primary" style="border-radius: 15px !important;">
+                          <div class="tx-poppins tx-14 tx-medium" style="color: white;">Selanjutnya</div>
+                        </button>
+                      </div>
+
+                      <!-- <div class="row row-xs wd-100p">
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
+                      Dalam pengerjaan
+                    </div>
+                  </div> -->
+
+                    </div>
+                  </div>
+                </div>
                 <!-- Write content end here -->
               </div>
             </div>
@@ -150,7 +204,9 @@
       </div>
 
 
+
     </div>
+
 
     <!-- container -->
   </div>

@@ -56,9 +56,10 @@ Cuti di Luar Tanggungan Negara -->
                   style="margin-bottom: 20px;">
                   <div class="content-div tx-color-02 pd-t-3">
                     <div>
-                      <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0">Pembuatan Data Cuti</div>
+                      <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0 line-height-09">Pembuatan Data
+                        Cuti</div>
                     </div>
-                    <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Buat pengajuan cuti baru</div>
+                    <div class="tx-16 tx-md-18 tx-color-01 pd-x-2"></div>
                   </div>
                 </div>
 
@@ -68,21 +69,38 @@ Cuti di Luar Tanggungan Negara -->
                       <div class="col-3 pd-15 d-flex flex-column justify-content-center align-items-center"
                         style="border-right: 1px solid #f4f4f4;">
 
-                        <div class="d-flex">
-                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
-                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
-                        </div>
-                        <div class="d-flex">
-                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
-                          <div class="tx-poppins tx-14">Isi detail cuti</div>
-                        </div>
-                        <div class="d-flex">
-                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
-                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
-                        </div>
-                        <div class="d-flex">
-                          <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
-                          <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                        <div class="d-flex flex-column">
+                          <div class="d-flex align-items-center mg-b-10">
+                            <div class="ht-25 wd-25 d-flex justify-content-center align-items-center mg-r-10"
+                              style="background-color: #32ba9e; border-radius: 50%;">
+                              <ion-icon name="checkmark-outline" class="tx-16 stroke-thick"
+                                style="color: white;"></ion-icon>
+                            </div>
+                            <div class="tx-poppins tx-14 tx-medium" style="color: #32ba9e">Pilih jenis cuti</div>
+                          </div>
+
+                          <div class="d-flex align-items-center">
+                            <div class="ht-25 wd-25 d-flex justify-content-center align-items-center mg-r-10"
+                              style="background-color: #408bfc; border-radius: 50%;">
+                              <div class="tx-poppins tx-14 tx-medium" style="color: white">2</div>
+                            </div>
+                            <div class="tx-poppins tx-14 tx-medium" style="color: #408bfc">Isi detail cuti</div>
+                          </div>
+
+
+                          <div class="d-flex">
+
+                            <ion-icon name="checkmark" class="tx-16 mg-r-5 tx-medium"></ion-icon>
+                            <div class="tx-poppins tx-14">Isi detail cuti</div>
+                          </div>
+                          <div class="d-flex">
+                            <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                            <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                          </div>
+                          <div class="d-flex">
+                            <ion-icon name="checkmark" class="tx-16 mg-r-5"></ion-icon>
+                            <div class="tx-poppins tx-14">Pilih jenis cuti</div>
+                          </div>
                         </div>
 
                       </div>

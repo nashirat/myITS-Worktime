@@ -1,7 +1,7 @@
 <script src="../../lib/jquery/jquery.min.js"></script>
 <script src="../../lib/jqueryui/jquery-ui.min.js"></script>
 <script src="http://benalman.com/code/projects/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
-<script src="../../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../lib/bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 <script src="../../lib/feather-icons/feather.min.js"></script>
 <script src="../../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 <script src="../../lib/prismjs/prism.js"></script>
