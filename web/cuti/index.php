@@ -135,11 +135,14 @@
                 <div class="modal fade" id="modalRK" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenterTitle" data-backdrop="static" aria-hidden="true">
                   <div class="modal-dialog modal-fullscreen modal-fullscreen-its">
-                    <div class="modal-content bg-color pd-20">
+                    <div class="modal-content bg-color pd-20 pos-relative">
+                      <div class="pos-absolute r-50 t-45">
+                        <ion-icon name="close" class="tx-16 btn btn-text-dark" data-bs-dismiss="modal"></ion-icon>
+                      </div>
                       <div class="d-flex justify-content-center tx-poppins tx-36 tx-medium mg-t-80 wd-100p">
                         Pembuatan Cuti Baru
                       </div>
-                      <div class="d-flex justify-content-center tx-poppins tx-16 mg-b-20 wd-100p">
+                      <div class="d-flex justify-content-center tx-poppins tx-16 mg-b-60 wd-100p">
                         Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
                       </div>
 
@@ -153,8 +156,40 @@
                   </div> -->
 
                       <div class="wd-100p d-flex justify-content-center mg-b-30">
-                        <div class="mx-wd-550 ht-300 bd" style="border-radius: 20px;">
-
+                        <div class="pd-20" style="border-radius: 20px; max-width: 575px;">
+                          <div class="tx-poppins tx-16">
+                            Pilih jenis cuti:
+                          </div>
+                          <div
+                            class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center mg-t-10 mg-b-30 pos-relative">
+                            <div id="tahunan" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Tahunan</div>
+                            </div>
+                            <div id="besar" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
+                            </div>
+                            <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
+                            </div>
+                            <div id="melahirkan"
+                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Melahirkan</div>
+                            </div>
+                            <div id="alasanpenting"
+                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Alasan Penting</div>
+                            </div>
+                            <div id="luartanggungan"
+                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                              style="border-radius: 8px;">
+                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti di Luar Tanggungan Negara</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
 
@@ -165,8 +200,10 @@
                         <!-- <button class="btn btn-text-dark">
                           <div class="tx-poppins tx-14 tx-medium" data-bs-dismiss="modal">Batal</div>
                         </button> -->
-                        <button class="btn btn-primary" style="border-radius: 15px !important;">
+                        <button class="btn btn-secondary cuti-select-btn" style="border-radius: 15px !important;"
+                          disabled>
                           <div class="tx-poppins tx-14 tx-medium" style="color: white;">Selanjutnya</div>
+
                         </button>
                       </div>
 
@@ -216,6 +253,48 @@
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
+
+
+  <!-- Pilih Cuti -->
+
+  <script>
+    $(function () {
+      'use strict'
+
+      $(".cuti-select").click(function () {
+      
+        $(this).addClass("buttonselect--loading").siblings().removeClass("buttonselect--loading");
+
+        // case bila tidak dapat ambil cuti
+
+        let id = $(this).attr("id");
+        let ids = ".cuti-select#" + id
+
+        if (id == "tahunan") {
+
+          setTimeout(function () {
+            $(ids).removeClass("buttonselect--loading").css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none")
+          }, 2200)
+
+        } else {
+
+          setTimeout(function () {
+            $(ids).removeClass("buttonselect--loading");
+            $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+            $(".cuti-select-btn").removeClass("btn-secondary").addClass("btn-primary");
+          }, 2200)
+
+
+        }
+
+      })
+
+
+
+
+
+    })
+  </script>
 
   <!-- Select2 -->
   <script>

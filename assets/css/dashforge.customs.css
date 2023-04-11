@@ -2951,6 +2951,21 @@ textarea:disabled {
   animation: button-loading-spinner 1s ease infinite;
 }
 
+.buttonselect--loading::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: #408bfc;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease infinite;
+}
+
 .checkmark {
   display: none;
 }
