@@ -132,6 +132,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="modal fade" id="modalRK" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenterTitle" data-backdrop="static" aria-hidden="true">
                   <div class="modal-dialog modal-fullscreen modal-fullscreen-its">
@@ -139,73 +140,133 @@
                       <div class="pos-absolute r-50 t-45">
                         <ion-icon name="close" class="tx-16 btn btn-text-dark" data-bs-dismiss="modal"></ion-icon>
                       </div>
-                      <div class="d-flex justify-content-center tx-poppins tx-36 tx-medium mg-t-80 wd-100p">
-                        Pembuatan Cuti Baru
-                      </div>
-                      <div class="d-flex justify-content-center tx-poppins tx-16 mg-b-60 wd-100p">
-                        Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
-                      </div>
 
-                      <!-- <div class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center mg-t-10 mg-b-30">
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Tahunan</div></div>
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Besar</div></div>
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Sakit</div></div>
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Melahirkan</div></div>
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti Alasan Penting</div></div>
-                    <div class="btn btn-text-dark pd-10 wd-100p bd" style="border-radius: 8px;"><div class="tx-poppins tx-14 tx-medium">Cuti di Luar Tanggungan Negara</div></div>
-                  </div> -->
-
-                      <div class="wd-100p d-flex justify-content-center mg-b-30">
-                        <div class="pd-20" style="border-radius: 20px; max-width: 575px;">
-                          <div class="tx-poppins tx-16">
-                            Pilih jenis cuti:
+                      <div class="ht-100p d-flex flex-column">
+                        <div class="d-flex flex-column pos-relative" style="margin-top: 120px;">
+                          <div class="d-flex justify-content-center tx-poppins tx-36 tx-medium wd-100p">
+                            Pembuatan Cuti Baru
                           </div>
-                          <div
-                            class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center mg-t-10 mg-b-30 pos-relative">
-                            <div id="tahunan" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Tahunan</div>
+                          <div class="d-flex justify-content-center tx-poppins tx-16 wd-100p">
+                            Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
+                          </div>
+                        </div>
+
+                        <div class="step-1">
+                          <div class="wd-100p d-flex justify-content-center mg-t-40">
+                            <div class="pd-20" style="max-width: 575px;">
+                              <div class="tx-poppins tx-16">
+                                Pilih jenis cuti:
+                              </div>
+                              <div
+                                class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center pos-relative">
+                                <div id="tahunan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Tahunan</div>
+                                </div>
+                                <div id="besar" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
+                                </div>
+                                <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
+                                </div>
+                                <div id="melahirkan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Melahirkan</div>
+                                </div>
+                                <div id="alasanpenting"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Alasan Penting</div>
+                                </div>
+                                <div id="luartanggungan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti di Luar Tanggungan Negara
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div id="besar" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
+                          </div>
+                          <div class="wd-100p d-flex justify-content-center mg-t-20">
+                            <button class="btn next-btn"
+                              style="border-radius: 15px !important; pointer-events: none; background-color: #e6e9f0; color: #9c9ea3">
+                              <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
+                            </button>
+                          </div>
+                        </div>
+
+                        <div class="step-2 d-none">
+                          <div class="wd-100p d-flex justify-content-center mg-t-40">
+                            <div class="pd-20" style="max-width: 575px;">
+                              <div class="tx-poppins tx-16">
+                                Masukkan detail cuti:
+                              </div>
+                              <div
+                                class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center pos-relative">
+                                <div id="tahunan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Tahunan</div>
+                                </div>
+                                <div id="besar" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
+                                </div>
+                                <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
+                                </div>
+                                <div id="melahirkan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Melahirkan</div>
+                                </div>
+                                <div id="alasanpenting"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Alasan Penting</div>
+                                </div>
+                                <div id="luartanggungan"
+                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
+                                  style="border-radius: 8px;">
+                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti di Luar Tanggungan Negara
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
-                            </div>
-                            <div id="melahirkan"
-                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Melahirkan</div>
-                            </div>
-                            <div id="alasanpenting"
-                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Alasan Penting</div>
-                            </div>
-                            <div id="luartanggungan"
-                              class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                              style="border-radius: 8px;">
-                              <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti di Luar Tanggungan Negara</div>
+                          </div>
+                          <div class="wd-100p d-flex justify-content-center mg-t-20">
+                          <button class="btn next-btn"
+                            style="border-radius: 15px !important; pointer-events: none; background-color: #e6e9f0; color: #9c9ea3">
+                            <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
+                          </button>
+                        </div>
+                        </div>
+
+
+
+
+                        <div class="rejectcont d-none">
+                          <div class="wd-100p d-flex justify-content-center">
+                            <div class="mx-wd-650 pd-20 text-center">
+                              <div class="tx-poppins tx-14 tx-medium rejecttext" style="color: #ff6370">
+
+                              </div>
                             </div>
                           </div>
                         </div>
+
                       </div>
 
 
 
 
-                      <div class="wd-100p d-flex mg-t-5 justify-content-center">
-                        <!-- <button class="btn btn-text-dark">
-                          <div class="tx-poppins tx-14 tx-medium" data-bs-dismiss="modal">Batal</div>
-                        </button> -->
-                        <button class="btn btn-secondary cuti-select-btn" style="border-radius: 15px !important;"
-                          disabled>
-                          <div class="tx-poppins tx-14 tx-medium" style="color: white;">Selanjutnya</div>
 
-                        </button>
-                      </div>
+
 
                       <!-- <div class="row row-xs wd-100p">
                     <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
@@ -261,30 +322,68 @@
     $(function () {
       'use strict'
 
+      $(".next-btn").click(function () {
+        console.log("clicked")
+        $(".step-1").hide("fast");
+        $(".step-2").removeClass("d-none").show("fast")
+      })
+
       $(".cuti-select").click(function () {
-      
+        $(".cuti-select").css("border", "2px solid #e6e9f0");
+        $(".rejectcont").addClass("d-none").removeClass("d-block");
         $(this).addClass("buttonselect--loading").siblings().removeClass("buttonselect--loading");
 
         // case bila tidak dapat ambil cuti
+        // settimeout untuk test animasi saja
+        // gunakan case untuk tiap jenis cuti
 
         let id = $(this).attr("id");
         let ids = ".cuti-select#" + id
 
-        if (id == "tahunan") {
-
-          setTimeout(function () {
-            $(ids).removeClass("buttonselect--loading").css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none")
-          }, 2200)
-
-        } else {
-
-          setTimeout(function () {
-            $(ids).removeClass("buttonselect--loading");
-            $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-            $(".cuti-select-btn").removeClass("btn-secondary").addClass("btn-primary");
-          }, 2200)
-
-
+        switch (id) {
+          case "tahunan":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading");
+              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
+            }, 2200)
+            break;
+          case "besar":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading").css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none");
+              $(".rejectcont").removeClass("d-none").addClass("d-block");
+              $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
+              $(".rejecttext").html("Bapak/Ibu belum berhak atas Cuti Tahunan karena belum terhitung 5 (lima) tahun bekerja berdasarkan Surat Keputusan Pengangkatan Pegawai");
+            }, 2200)
+            break;
+          case "sakit":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading");
+              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
+            }, 2200)
+            break;
+          case "melahirkan":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading");
+              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
+            }, 2200)
+            break;
+          case "alasanpenting":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading");
+              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
+            }, 2200)
+            break;
+          case "luartanggungan":
+            setTimeout(function () {
+              $(ids).removeClass("buttonselect--loading");
+              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
+            }, 2200)
+            break;
         }
 
       })
