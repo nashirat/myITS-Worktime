@@ -192,8 +192,8 @@
                             </div>
                           </div>
                           <div class="wd-100p d-flex justify-content-center mg-t-20">
-                            <button class="btn next-btn"
-                              style="border-radius: 15px !important; pointer-events: none; background-color: #e6e9f0; color: #9c9ea3">
+                            <button class="btn next-btn pd-x-20 pd-y-10"
+                              style="border-radius: 12px !important; pointer-events: none; background-color: #e6e9f0; color: #9c9ea3">
                               <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
                             </button>
                           </div>
@@ -202,84 +202,129 @@
                         <div class="step-2 d-none">
                           <div class="wd-100p d-flex justify-content-center mg-t-40">
                             <div class="pd-20" style="max-width: 575px;">
-                              <div class="tx-poppins tx-16">
+                              <!-- <div class="tx-poppins tx-16 tx-medium">
                                 Masukkan detail cuti:
-                              </div>
-                              <div
-                                class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center pos-relative">
-                                <div id="tahunan"
-                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Tahunan</div>
-                                </div>
-                                <div id="besar" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
-                                </div>
-                                <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
-                                </div>
-                                <div id="melahirkan"
-                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Melahirkan</div>
-                                </div>
-                                <div id="alasanpenting"
-                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Alasan Penting</div>
-                                </div>
-                                <div id="luartanggungan"
-                                  class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
-                                  style="border-radius: 8px;">
-                                  <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti di Luar Tanggungan Negara
+                              </div> -->
+                              <div class="d-flex flex-column wd-100p">
+
+                                <div class="wd-100p mg-b-10 pd-0 mg-0">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Keterangan</div>
                                   </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                </div>
+
+                                <div class="row row-xs mg-b-0 mg-t-5">
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" min="06:00" max="20:00" step="600" id="waktumulai"
+                                          name="waktumulai" placeholder="JJ:MM" onfocus="(this.type='time')"
+                                          onblur="(this.type='text')"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" min="06:00" max="20:00" step="600" id="waktuselesai"
+                                          name="waktuselesai" placeholder="JJ:MM" onfocus="(this.type='time')"
+                                          onblur="(this.type='text')"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                        <button
+                                          class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
+                                          <ion-icon name="close" class="tx-20"></ion-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-05 tx-16">Durasi cuti</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" id="durasi" name="durasi" placeholder="0 Jam 0 Menit"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"
+                                          readonly></input>
+                                        <button
+                                          class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
+                                          <ion-icon name="close" class="tx-20"></ion-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tx-color-01 tx-16 d-inline-block text-break line-height-08" style=" margin-top:
+                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day" class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul <span
+                                      id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
+                                    id="selama"></span>
+                                </div>
+                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">No Telp</div>
+                                  </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="08XXX" id="notelp"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                  <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Tempat</div>
+                                  </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                           <div class="wd-100p d-flex justify-content-center mg-t-20">
-                          <button class="btn next-btn"
-                            style="border-radius: 15px !important; pointer-events: none; background-color: #e6e9f0; color: #9c9ea3">
-                            <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
-                          </button>
+                            <div class="wd-100p d-flex justify-content-between" style="max-width: 540px;">
+                              <button class="btn btn-primary back-btn pd-x-20 pd-y-10"
+                                style="border-radius: 12px !important;">
+                                <div class="tx-poppins tx-14 tx-medium">Sebelumnya</div>
+                              </button>
+                              <button class="btn next-btn pd-x-20 pd-y-10"
+                                style="border-radius: 12px !important; background-color: #e6e9f0; color: #9c9ea3">
+                                <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
+                              </button>
+                            </div>
+                          </div>
                         </div>
-                        </div>
 
-
-
-
+                        <!-- pesan reject -->
                         <div class="rejectcont d-none">
                           <div class="wd-100p d-flex justify-content-center">
                             <div class="mx-wd-650 pd-20 text-center">
                               <div class="tx-poppins tx-14 tx-medium rejecttext" style="color: #ff6370">
-
                               </div>
                             </div>
                           </div>
                         </div>
 
                       </div>
-
-
-
-
-
-
-
-                      <!-- <div class="row row-xs wd-100p">
-                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
-                      Dalam pengerjaan
-                    </div>
-                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
-                      Dalam pengerjaan
-                    </div>
-                    <div class="col-4 pd-10" style="border-radius: 12px; background-color: red;">
-                      Dalam pengerjaan
-                    </div>
-                  </div> -->
-
                     </div>
                   </div>
                 </div>
@@ -322,75 +367,74 @@
     $(function () {
       'use strict'
 
+      let stepId = 0;
+
+      let selectedId;
+      let states = [false, false, false]
+
+      checkAvailableCuti();
+
       $(".next-btn").click(function () {
-        console.log("clicked")
-        $(".step-1").hide("fast");
-        $(".step-2").removeClass("d-none").show("fast")
+        stepId++;
+        switchStep();
       })
 
-      $(".cuti-select").click(function () {
-        $(".cuti-select").css("border", "2px solid #e6e9f0");
-        $(".rejectcont").addClass("d-none").removeClass("d-block");
-        $(this).addClass("buttonselect--loading").siblings().removeClass("buttonselect--loading");
+      $(".back-btn").click(function () {
+        (stepId <= 0) ? stepId = 0 : stepId--;
+        switchStep();
+      })
 
-        // case bila tidak dapat ambil cuti
-        // settimeout untuk test animasi saja
-        // gunakan case untuk tiap jenis cuti
-
-        let id = $(this).attr("id");
-        let ids = ".cuti-select#" + id
-
-        switch (id) {
-          case "tahunan":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading");
-              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
-            }, 2200)
+      function switchStep() {
+        switch (stepId) {
+          case 0:
+            $(".step-1").removeClass("d-none").addClass("d-block")
+            $(".step-2").removeClass("d-block").addClass("d-none")
+            checkNextButton(states[0]);
             break;
-          case "besar":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading").css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none");
-              $(".rejectcont").removeClass("d-none").addClass("d-block");
-              $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
-              $(".rejecttext").html("Bapak/Ibu belum berhak atas Cuti Tahunan karena belum terhitung 5 (lima) tahun bekerja berdasarkan Surat Keputusan Pengangkatan Pegawai");
-            }, 2200)
-            break;
-          case "sakit":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading");
-              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
-            }, 2200)
-            break;
-          case "melahirkan":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading");
-              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
-            }, 2200)
-            break;
-          case "alasanpenting":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading");
-              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
-            }, 2200)
-            break;
-          case "luartanggungan":
-            setTimeout(function () {
-              $(ids).removeClass("buttonselect--loading");
-              $(ids).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
-              $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white");
-            }, 2200)
+          case 1:
+            $(".step-1").removeClass("d-block").addClass("d-none")
+            $(".step-2").removeClass("d-none").addClass("d-block")
+            checkNextButton(states[1]);
             break;
         }
+      }
 
+      function checkAvailableCuti() {
+        let ids = [".cuti-select#tahunan", ".cuti-select#besar", ".cuti-select#sakit", ".cuti-select#melahirkan", ".cuti-select#alasanpenting", ".cuti-select#luartanggungan"]
+        let flags = [true, false, true, true, true, true]
+
+        // (selectId != null) ? 
+
+        function availableCuti(cid) {
+          $(cid).addClass("bd").addClass("bd-2");
+        }
+
+        function disableCuti(cid) {
+          $(cid).css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none");
+        }
+
+        for (let i = 0; i <= ids.length; i++) {
+          flags[i] ? availableCuti(ids[i]) : disableCuti(ids[i])
+        }
+
+      }
+
+      function checkNextButton(state) {
+        state ? $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white")
+          : $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
+      }
+
+      // function changeSelectStatus() {
+      //   select ? $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white")
+      //     : $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
+      // }
+
+      $(".cuti-select").click(function () {
+        $(this).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
+        selectedId = $(this).attr("id");
+        states[0] = true;
+        checkNextButton(states[0]);
       })
-
-
-
-
 
     })
   </script>
