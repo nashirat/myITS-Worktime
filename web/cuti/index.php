@@ -214,7 +214,7 @@
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
                                     <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
-                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                       style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                   </div>
                                 </div>
@@ -271,8 +271,9 @@
                                   </div>
                                 </div>
                                 <div class="tx-color-01 tx-16 d-inline-block text-break line-height-08" style=" margin-top:
-                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day" class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul <span
-                                      id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
+                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day"
+                                    class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul
+                                    <span id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
                                     id="selama"></span>
                                 </div>
                                 <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
@@ -282,20 +283,20 @@
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
                                     <input type="text" value="" placeholder="08XXX" id="notelp"
-                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                       style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                   </div>
                                   <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
-                                  <div class="pd-y-6">
-                                    <div class="tx-color-01 tx-16">Tempat</div>
+                                    <div class="pd-y-6">
+                                      <div class="tx-color-01 tx-16">Tempat</div>
+                                    </div>
+                                    <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                      style="border-radius: 6px !important;">
+                                      <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                        class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
+                                        style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                    </div>
                                   </div>
-                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
-                                    style="border-radius: 6px !important;">
-                                    <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
-                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
-                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
-                                  </div>
-                                </div>
                                 </div>
                               </div>
                             </div>
@@ -309,6 +310,122 @@
                               <button class="btn next-btn pd-x-20 pd-y-10"
                                 style="border-radius: 12px !important; background-color: #e6e9f0; color: #9c9ea3">
                                 <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="step-3 d-none">
+                          <div class="wd-100p d-flex justify-content-center mg-t-40">
+                            <div class="pd-20" style="max-width: 575px;">
+                              <!-- <div class="tx-poppins tx-16 tx-medium">
+                                Masukkan detail cuti:
+                              </div> -->
+                              <div class="d-flex flex-column wd-100p">
+
+                                <div class="wd-100p mg-b-10 pd-0 mg-0">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Ringkasan</div>
+                                  </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                </div>
+
+                                <div class="row row-xs mg-b-0 mg-t-5">
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" min="06:00" max="20:00" step="600" id="waktumulai"
+                                          name="waktumulai" placeholder="JJ:MM" onfocus="(this.type='time')"
+                                          onblur="(this.type='text')"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" min="06:00" max="20:00" step="600" id="waktuselesai"
+                                          name="waktuselesai" placeholder="JJ:MM" onfocus="(this.type='time')"
+                                          onblur="(this.type='text')"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                        <button
+                                          class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
+                                          <ion-icon name="close" class="tx-20"></ion-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-4">
+                                    <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
+                                      <div class="col-12 pd-y-6">
+                                        <div class="tx-color-05 tx-16">Durasi cuti</div>
+                                      </div>
+                                      <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
+                                        <input type="text" id="durasi" name="durasi" placeholder="0 Jam 0 Menit"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"
+                                          readonly></input>
+                                        <button
+                                          class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
+                                          <ion-icon name="close" class="tx-20"></ion-icon>
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="tx-color-01 tx-16 d-inline-block text-break line-height-08" style=" margin-top:
+                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day"
+                                    class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul
+                                    <span id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
+                                    id="selama"></span>
+                                </div>
+                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">No Telp</div>
+                                  </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="08XXX" id="notelp"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                  <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                    <div class="pd-y-6">
+                                      <div class="tx-color-01 tx-16">Tempat</div>
+                                    </div>
+                                    <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                      style="border-radius: 6px !important;">
+                                      <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                        class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
+                                        style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="wd-100p d-flex justify-content-center mg-t-20">
+                            <div class="wd-100p d-flex justify-content-between" style="max-width: 540px;">
+                              <button class="btn btn-primary back-btn pd-x-20 pd-y-10"
+                                style="border-radius: 12px !important;">
+                                <div class="tx-poppins tx-14 tx-medium">Sebelumnya</div>
+                              </button>
+                              <button class="btn next-btn pd-x-20 pd-y-10"
+                                style="border-radius: 12px !important; background-color: #e6e9f0; color: #9c9ea3">
+                                <div class="tx-poppins tx-14 tx-medium">Simpan</div>
                               </button>
                             </div>
                           </div>
@@ -368,14 +485,13 @@
       'use strict'
 
       let stepId = 0;
-
       let selectedId;
       let states = [false, false, false]
 
       checkAvailableCuti();
 
       $(".next-btn").click(function () {
-        stepId++;
+        (stepId >= 3z) ? stepId = 0 : stepId--;
         switchStep();
       })
 
@@ -403,8 +519,6 @@
         let ids = [".cuti-select#tahunan", ".cuti-select#besar", ".cuti-select#sakit", ".cuti-select#melahirkan", ".cuti-select#alasanpenting", ".cuti-select#luartanggungan"]
         let flags = [true, false, true, true, true, true]
 
-        // (selectId != null) ? 
-
         function availableCuti(cid) {
           $(cid).addClass("bd").addClass("bd-2");
         }
@@ -416,12 +530,32 @@
         for (let i = 0; i <= ids.length; i++) {
           flags[i] ? availableCuti(ids[i]) : disableCuti(ids[i])
         }
-
       }
 
       function checkNextButton(state) {
         state ? $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white")
           : $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
+      }
+
+      $('.inputform').on('input keyup change paste', 'input, select, textarea', function () {
+        console.log('Form changed!');
+      });
+
+      $('.inputform').change(function() {
+        validateForm();
+        console.log("yo")
+        console.log(states[1])
+        checkNextButton(states[1]);
+      })
+
+
+      function validateForm() {
+        states[1] = true;
+        $('.inputform').each(function () {
+          if ($(this).val() === '')
+            states[1] = false;
+        });
+        return;
       }
 
       // function changeSelectStatus() {
