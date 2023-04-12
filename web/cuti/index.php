@@ -158,7 +158,7 @@
                                 Pilih jenis cuti:
                               </div>
                               <div
-                                class="wd-100p d-flex gap-2 flex-wrap justify-content-start align-items-center pos-relative">
+                                class="wd-100p d-flex flex-wrap gap-2 justify-content-start align-items-center pos-relative">
                                 <div id="tahunan"
                                   class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
                                   style="border-radius: 8px;">
@@ -168,6 +168,8 @@
                                   style="border-radius: 8px;">
                                   <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Besar</div>
                                 </div>
+
+
                                 <div id="sakit" class="btn btn-text-dark cuti-select pd-10 wd-100p bd bd-2 pos-relative"
                                   style="border-radius: 8px;">
                                   <div class="tx-poppins tx-14 tx-medium pos-relative">Cuti Sakit</div>
@@ -197,6 +199,21 @@
                               <div class="tx-poppins tx-14 tx-medium">Selanjutnya</div>
                             </button>
                           </div>
+
+                          <!-- pesan reject -->
+                          <div class="rejectcont mg-t-60">
+                            <div class="wd-100p d-flex justify-content-center">
+                              <div class="pd-20 text-center mx-wd-650">
+                                <div class="tx-poppins tx-14 tx-medium rejecttext mg-b-4" style="color: #ff6370">
+                                  Bapak/Ibu belum berhak atas Cuti Besar karena belum bekerja selama 5 tahun
+                                </div>
+                                <div class="tx-poppins tx-14 tx-medium warningtext mg-b-4" style="color: #fece3a">
+                                  Cuti Sakit wajib menyertakan surat dokter
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </div>
 
                         <div class="step-2 d-none">
@@ -270,13 +287,8 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="tx-color-01 tx-16 d-inline-block text-break line-height-08" style=" margin-top:
-                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day"
-                                    class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul
-                                    <span id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
-                                    id="selama"></span>
-                                </div>
-                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+
+                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-5">
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">No Telp</div>
                                   </div>
@@ -325,13 +337,18 @@
 
                                 <div class="wd-100p mg-b-10 pd-0 mg-0">
                                   <div class="pd-y-6">
-                                    <div class="tx-color-01 tx-16">Ringkasan</div>
+                                    <div class="tx-color-01 tx-16">Anda membuat <span class="tx-medium">Cuti
+                                        Tahunan</span> baru dengan data:</div>
+                                  </div>
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Keterangan</div>
                                   </div>
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
-                                    <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
-                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
-                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                    <input type="text" value="Cuti setelah hari raya" placeholder="Keterangan cuti"
+                                      id="keterangan" class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "
+                                      readonly></input>
                                   </div>
                                 </div>
 
@@ -342,11 +359,12 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" min="06:00" max="20:00" step="600" id="waktumulai"
-                                          name="waktumulai" placeholder="JJ:MM" onfocus="(this.type='time')"
-                                          onblur="(this.type='text')"
+                                        <input type="text" value="26 April 2023" min="06:00" max="20:00" step="600"
+                                          id="waktumulai" name="waktumulai" placeholder="JJ:MM"
+                                          onfocus="(this.type='time')" onblur="(this.type='text')"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
-                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"
+                                          readonly></input>
                                       </div>
                                     </div>
                                   </div>
@@ -356,11 +374,12 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" min="06:00" max="20:00" step="600" id="waktuselesai"
-                                          name="waktuselesai" placeholder="JJ:MM" onfocus="(this.type='time')"
-                                          onblur="(this.type='text')"
+                                        <input type="text" value="28 April 2023" min="06:00" max="20:00" step="600"
+                                          id="waktuselesai" name="waktuselesai" placeholder="JJ:MM"
+                                          onfocus="(this.type='time')" onblur="(this.type='text')"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
-                                          style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
+                                          style="border-radius: 10px; background-color: none !important; border: none !important;"
+                                          readonly></input>
                                         <button
                                           class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
                                           <ion-icon name="close" class="tx-20"></ion-icon>
@@ -374,7 +393,8 @@
                                         <div class="tx-color-05 tx-16">Durasi cuti</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" id="durasi" name="durasi" placeholder="0 Jam 0 Menit"
+                                        <input type="text" value="3 Hari" id="durasi" name="durasi"
+                                          placeholder="0 Jam 0 Menit"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
@@ -386,21 +406,17 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="tx-color-01 tx-16 d-inline-block text-break line-height-08" style=" margin-top:
-                                  -1px; ">Cuti akan dilaksanakan selama <span id=" day"
-                                    class="d-inline-block text-break"></span> <span class="d-none" id="pukul"> pukul
-                                    <span id="st"></span> sampai <span id="ed"></span></span><span class="d-none"
-                                    id="selama"></span>
-                                </div>
-                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+
+                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-5">
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">No Telp</div>
                                   </div>
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
-                                    <input type="text" value="" placeholder="08XXX" id="notelp"
-                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
-                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                    <input type="text" value="082264717134" placeholder="08XXX" id="notelp"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "
+                                      readonly></input>
                                   </div>
                                   <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
                                     <div class="pd-y-6">
@@ -408,9 +424,11 @@
                                     </div>
                                     <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
-                                      <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
-                                        class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
-                                        style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                      <input type="text" value="Perum Griya Kencana Permai Blok C.22 Madiun"
+                                        placeholder="Keterangan cuti" id="keterangan"
+                                        class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                        style="border-radius: 10px; background-color: none !important; border: none !important; "
+                                        readonly></input>
                                     </div>
                                   </div>
                                 </div>
@@ -423,23 +441,15 @@
                                 style="border-radius: 12px !important;">
                                 <div class="tx-poppins tx-14 tx-medium">Sebelumnya</div>
                               </button>
-                              <button class="btn next-btn pd-x-20 pd-y-10"
-                                style="border-radius: 12px !important; background-color: #e6e9f0; color: #9c9ea3">
+                              <button class="btn btn-primary save-btn pd-x-20 pd-y-10"
+                                style="border-radius: 12px !important;">
                                 <div class="tx-poppins tx-14 tx-medium">Simpan</div>
                               </button>
                             </div>
                           </div>
                         </div>
 
-                        <!-- pesan reject -->
-                        <div class="rejectcont d-none">
-                          <div class="wd-100p d-flex justify-content-center">
-                            <div class="mx-wd-650 pd-20 text-center">
-                              <div class="tx-poppins tx-14 tx-medium rejecttext" style="color: #ff6370">
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+
 
                       </div>
                     </div>
@@ -491,7 +501,7 @@
       checkAvailableCuti();
 
       $(".next-btn").click(function () {
-        (stepId >= 3z) ? stepId = 0 : stepId--;
+        (stepId >= 3) ? stepId = 3 : stepId++;
         switchStep();
       })
 
@@ -510,7 +520,14 @@
           case 1:
             $(".step-1").removeClass("d-block").addClass("d-none")
             $(".step-2").removeClass("d-none").addClass("d-block")
+            $(".step-3").removeClass("d-block").addClass("d-none")
             checkNextButton(states[1]);
+            break;
+          case 2:
+            $(".step-2").removeClass("d-block").addClass("d-none");
+            $(".step-3").removeClass("d-none").addClass("d-block");
+            states[2] = true;
+            checkNextButton(states[2]);
             break;
         }
       }
@@ -541,7 +558,7 @@
         console.log('Form changed!');
       });
 
-      $('.inputform').change(function() {
+      $('.inputform').change(function () {
         validateForm();
         console.log("yo")
         console.log(states[1])
