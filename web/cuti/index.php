@@ -243,9 +243,7 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" min="06:00" max="20:00" step="600" id="waktumulai"
-                                          name="waktumulai" placeholder="JJ:MM" onfocus="(this.type='time')"
-                                          onblur="(this.type='text')"
+                                        <input type="text" id="tanggalmulai" name="tanggalmulai" placeholder="Pilih tanggal la"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
                                       </div>
@@ -257,9 +255,8 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" min="06:00" max="20:00" step="600" id="waktuselesai"
-                                          name="waktuselesai" placeholder="JJ:MM" onfocus="(this.type='time')"
-                                          onblur="(this.type='text')"
+                                        <input type="text" id="tanggalselesai"
+                                          name="tanggalselesai" placeholder="Kapan bar e"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
                                         <button
@@ -489,7 +486,6 @@
 
 
   <!-- Pilih Cuti -->
-
   <script>
     $(function () {
       'use strict'
@@ -575,11 +571,6 @@
         return;
       }
 
-      // function changeSelectStatus() {
-      //   select ? $(".next-btn").addClass("btn-primary").css("pointer-events", "auto").css("background-color", "#0168fa").css("color", "white")
-      //     : $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
-      // }
-
       $(".cuti-select").click(function () {
         $(this).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
         selectedId = $(this).attr("id");
@@ -587,6 +578,15 @@
         checkNextButton(states[0]);
       })
 
+    })
+  </script>
+
+  <!-- Datepicker -->
+  <script>
+    $(function () {
+      'use strict'
+      const awal = datepicker('#tanggalmulai', { id: 1 })
+      const akhir =datepicker('#tanggalselesai', { id: 1 })
     })
   </script>
 

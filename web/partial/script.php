@@ -9,6 +9,7 @@
 <script src="../../assets/js/dashforge.js"></script>
 <!-- <script src="../../assets/js/dashforge.aside.js"></script> -->
 <!-- <script src="../../assets/js/smooth-scrollbar.js"></script> -->
+ <script src="https://unpkg.com/js-datepicker"></script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <!-- what is this -->

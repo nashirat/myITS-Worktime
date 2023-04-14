@@ -40,6 +40,7 @@
 <link href="../../lib/prismjs/themes/prism-vs.css" rel="stylesheet">
 <link href="../../lib/animate.css/animate.min.css" rel="stylesheet">
 <link href="../../lib/ekko-lightbox/css/ekko-lightbox.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
 
 
 
