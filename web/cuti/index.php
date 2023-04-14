@@ -609,6 +609,8 @@
       const awal = datepicker('#tanggalmulai', {
         id: 1,
         noWeekends: true,
+        customDays: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'],
+        minDate: new Date(),
         onSelect: function () {
           const durasi = awal.getRange();
           if (durasi.start != null && durasi.end != null) {
@@ -620,17 +622,32 @@
       const akhir = datepicker('#tanggalselesai', {
         id: 1,
         noWeekends: true,
+        customDays: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min'],
+        minDate: new Date(),
         onSelect: function () {
           const durasi = akhir.getRange();
           if (durasi.start != null && durasi.end != null) {
             durasiHari = (durasi.end.getDate() - durasi.start.getDate()) - (durasi.start.getDate() - durasi.start.getDate())
-            // console.log(durasiHari)
-            setDurasi(durasiHari)
+            let startDay = durasi.start.getDay();
+            let listDay = [];
+            let dontCount = [0,6] 
+            for (let i = 0; i <= durasiHari; i++) {
+              if (startDay <= 6 ) {
+                listDay.push(startDay++);
+              } else {
+                listDay.push(startDay = 0);
+              
+                startDay++;
+              }
+            }
+           listDay = listDay.filter(item => !dontCount.includes(item))
+            // let syncWeek  = Math.floor(durasiHari/7);
+            setDurasi(listDay.length)
           }
         },
       })
 
-      function checkDurasi(y) {
+      function checkDurasi(x) {
 
       }
 
