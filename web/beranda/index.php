@@ -1102,8 +1102,8 @@
         let h = today.getHours();
         let m = today.getMinutes();
         let s = today.getSeconds();
-        const early = 555;
-        const late = 570;
+        const early = 500;
+        const late = 515;
         console.log(minuteToday)
         wtt = setTimeout(checkLateTime, 1000)
 

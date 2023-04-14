@@ -2562,6 +2562,7 @@ select:focus {
 
 input[type="text"],
 input[type="time"],
+input[type="tel"],
 textarea {
   background-color: rgba(0, 0, 0, 0) !important;
 }

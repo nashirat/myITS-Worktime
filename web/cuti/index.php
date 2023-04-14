@@ -226,6 +226,10 @@
 
                                 <div class="wd-100p mg-b-10 pd-0 mg-0">
                                   <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Anda memilih <span
+                                        class="tx-medium cuti-terpilih"></span></div>
+                                  </div>
+                                  <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">Keterangan</div>
                                   </div>
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
@@ -243,8 +247,9 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" id="tanggalmulai" name="tanggalmulai" placeholder="Pilih tanggal la"
-                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                        <input type="text" id="tanggalmulai" name="tanggalmulai"
+                                          placeholder="Pilih tanggal awal"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
                                       </div>
                                     </div>
@@ -255,9 +260,9 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" id="tanggalselesai"
-                                          name="tanggalselesai" placeholder="Kapan bar e"
-                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                        <input type="text" id="tanggalselesai" name="tanggalselesai"
+                                          placeholder="Pilih tanggal akhir"
+                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"></input>
                                         <button
                                           class="btn btn-icon d-none align-items-center justify-content-center tx-color-01 pd-0 pos-absolute del-btn">
@@ -272,7 +277,7 @@
                                         <div class="tx-color-05 tx-16">Durasi cuti</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" id="durasi" name="durasi" placeholder="0 Jam 0 Menit"
+                                        <input type="text" id="durasi" name="durasi" placeholder="0 Hari"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
@@ -291,17 +296,17 @@
                                   </div>
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
-                                    <input type="text" value="" placeholder="08XXX" id="notelp"
+                                    <input type="text" value="" name="numonly" placeholder="0812345678" id="notelp"
                                       class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                       style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                   </div>
                                   <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
                                     <div class="pd-y-6">
-                                      <div class="tx-color-01 tx-16">Tempat</div>
+                                      <div class="tx-color-01 tx-16">Alamat</div>
                                     </div>
                                     <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
-                                      <input type="text" value="" placeholder="Keterangan cuti" id="keterangan"
+                                      <input type="text" value="" placeholder="Alamat anda selama cuti" id="keterangan"
                                         class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                         style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                     </div>
@@ -335,7 +340,7 @@
                                 <div class="wd-100p mg-b-10 pd-0 mg-0">
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">Anda membuat <span class="tx-medium">Cuti
-                                        Tahunan</span> baru dengan data:</div>
+                                        Tahunan</span></div>
                                   </div>
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">Keterangan</div>
@@ -390,7 +395,7 @@
                                         <div class="tx-color-05 tx-16">Durasi cuti</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" value="3 Hari" id="durasi" name="durasi"
+                                        <input type="text" value="3 Hari" id="durasiringkas" name="durasiringkas"
                                           placeholder="0 Jam 0 Menit"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
@@ -417,12 +422,12 @@
                                   </div>
                                   <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
                                     <div class="pd-y-6">
-                                      <div class="tx-color-01 tx-16">Tempat</div>
+                                      <div class="tx-color-01 tx-16">Alamat</div>
                                     </div>
                                     <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
                                       <input type="text" value="Perum Griya Kencana Permai Blok C.22 Madiun"
-                                        placeholder="Keterangan cuti" id="keterangan"
+                                        placeholder="Alamat anda selama cuti" id="keterangan"
                                         class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                         style="border-radius: 10px; background-color: none !important; border: none !important; "
                                         readonly></input>
@@ -490,6 +495,7 @@
     $(function () {
       'use strict'
 
+      let sisaCutiTahunan = 10;
       let stepId = 0;
       let selectedId;
       let states = [false, false, false]
@@ -550,17 +556,16 @@
           : $(".next-btn").removeClass("btn-primary").css("color", "#9c9ea3").css("background-color", "#e6e9f0").css("pointer-events", "none");
       }
 
-      $('.inputform').on('input keyup change paste', 'input, select, textarea', function () {
-        console.log('Form changed!');
-      });
-
       $('.inputform').change(function () {
         validateForm();
-        console.log("yo")
-        console.log(states[1])
+        // console.log("yo")
+        // console.log(states[1])
         checkNextButton(states[1]);
       })
 
+      $("input[name='numonly']").on('input', function (e) {
+        $(this).val($(this).val().replace(/[^0-9]/g, ''));
+      });
 
       function validateForm() {
         states[1] = true;
@@ -574,19 +579,65 @@
       $(".cuti-select").click(function () {
         $(this).css("border", "2px solid #408bfc").siblings().css("border", "2px solid #e6e9f0")
         selectedId = $(this).attr("id");
+        switch (selectedId) {
+          case "tahunan":
+            let textSisa = '<span class="tx-normal">  dengan sisa cuti <span class="tx-medium">' + sisaCutiTahunan + ' Hari </span></span>'
+            let textCuti = "Cuti Tahunan" + textSisa;
+            $(".cuti-terpilih").html(textCuti);
+            break;
+          case "besar":
+            $(".cuti-terpilih").html("Cuti Besar");
+            break;
+          case "sakit":
+            $(".cuti-terpilih").html("Cuti Tahunan");
+            break;
+          case "melahirkan":
+            $(".cuti-terpilih").html("Cuti Melahirkan");
+            break;
+          case "alasanpenting":
+            $(".cuti-terpilih").html("Cuti Alasan Penting");
+            break;
+          case "luartanggungan":
+            $(".cuti-terpilih").html("Cuti di Luar Tanggungan Negara");
+            break;
+        }
         states[0] = true;
         checkNextButton(states[0]);
       })
 
-    })
-  </script>
+      let durasiHari;
+      const awal = datepicker('#tanggalmulai', {
+        id: 1,
+        noWeekends: true,
+        onSelect: function () {
+          const durasi = awal.getRange();
+          if (durasi.start != null && durasi.end != null) {
+            durasiHari = (durasi.end.getDate() - durasi.start.getDate()) - (durasi.start.getDate() - durasi.start.getDate())
+            setDurasi(durasiHari)
+          }
+        },
+      })
+      const akhir = datepicker('#tanggalselesai', {
+        id: 1,
+        noWeekends: true,
+        onSelect: function () {
+          const durasi = akhir.getRange();
+          if (durasi.start != null && durasi.end != null) {
+            durasiHari = (durasi.end.getDate() - durasi.start.getDate()) - (durasi.start.getDate() - durasi.start.getDate())
+            // console.log(durasiHari)
+            setDurasi(durasiHari)
+          }
+        },
+      })
 
-  <!-- Datepicker -->
-  <script>
-    $(function () {
-      'use strict'
-      const awal = datepicker('#tanggalmulai', { id: 1 })
-      const akhir =datepicker('#tanggalselesai', { id: 1 })
+      function checkDurasi(y) {
+
+      }
+
+      function setDurasi(x) {
+        $("#durasi").val(x + " Hari");
+      }
+
     })
   </script>
 
