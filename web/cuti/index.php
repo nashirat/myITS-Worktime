@@ -50,7 +50,7 @@
                   </div>
                   <a>
                     <div class="btn btn-primary pd-x-20 pd-y-10" style="border-radius: 15px;" data-bs-toggle="modal"
-                      data-bs-target="#modalRK">
+                      data-bs-target="#modalCuti">
                       <div class="tx-poppins tx-14">Buat cuti baru</div>
                     </div>
                   </a>
@@ -102,7 +102,8 @@
                       </div>
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4 mg-md-b-6">
+                    <div
+                      class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4 mg-md-b-6 mg-lg-b-0">
                       <div class="col-12 rounded-its-10 wd-100p d-flex justify-content-end pd-6 bg-color search-input"
                         style="height: 44px;">
                         <input type="text" placeholder="Cari dengan kata kunci" id="search-key"
@@ -133,7 +134,7 @@
                   </div>
                 </div>
 
-                <div class="modal fade" id="modalRK" tabindex="-1" role="dialog"
+                <div class="modal fade" id="modalCuti" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalCenterTitle" data-backdrop="static" aria-hidden="true">
                   <div class="modal-dialog modal-fullscreen modal-fullscreen-its">
                     <div class="modal-content bg-color pd-20 pos-relative">
@@ -296,7 +297,7 @@
                                   </div>
                                   <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                     style="border-radius: 6px !important;">
-                                    <input type="text" value="" name="numonly" placeholder="0812345678" id="notelp"
+                                    <input type="text" value="" name="numonly" placeholder="082264182423" id="notelp"
                                       class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                       style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                   </div>
@@ -329,6 +330,8 @@
                           </div>
                         </div>
 
+                        <!-- Simpan lalu pakai, atau ambil dari sebelumnya? -->
+
                         <div class="step-3 d-none">
                           <div class="wd-100p d-flex justify-content-center mg-t-40">
                             <div class="pd-20" style="max-width: 575px;">
@@ -340,7 +343,7 @@
                                 <div class="wd-100p mg-b-10 pd-0 mg-0">
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">Anda membuat <span class="tx-medium">Cuti
-                                        Tahunan</span></div>
+                                        Tahunan</span> dengan data: </div>
                                   </div>
                                   <div class="pd-y-6">
                                     <div class="tx-color-01 tx-16">Keterangan</div>
@@ -361,9 +364,8 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" value="26 April 2023" min="06:00" max="20:00" step="600"
-                                          id="waktumulai" name="waktumulai" placeholder="JJ:MM"
-                                          onfocus="(this.type='time')" onblur="(this.type='text')"
+                                        <input type="text" value="26 April 2023"
+                                          id="tanggalmulaicek" name="tanggalmulaicek"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
@@ -376,9 +378,8 @@
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" value="28 April 2023" min="06:00" max="20:00" step="600"
-                                          id="waktuselesai" name="waktuselesai" placeholder="JJ:MM"
-                                          onfocus="(this.type='time')" onblur="(this.type='text')"
+                                        <input type="text" value="28 April 2023" 
+                                          id="tanggalselesaicek" name="tanggalselesaicek"
                                           class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
@@ -437,21 +438,19 @@
                               </div>
                             </div>
                           </div>
-                          <div class="wd-100p d-flex justify-content-center mg-t-20">
-                            <div class="wd-100p d-flex justify-content-between" style="max-width: 540px;">
+                          <div class="wd-100p d-flex justify-content-center mg-t-20 pos-relative">
+                            <div class="wd-100p d-flex justify-content-between pos-relative" style="max-width: 540px;">
                               <button class="btn btn-primary back-btn pd-x-20 pd-y-10"
                                 style="border-radius: 12px !important;">
                                 <div class="tx-poppins tx-14 tx-medium">Sebelumnya</div>
                               </button>
-                              <button class="btn btn-primary save-btn pd-x-20 pd-y-10"
+                              <button class="btn btn-primary save-btn pd-x-20 pd-y-10 pos-relative"
                                 style="border-radius: 12px !important;">
-                                <div class="tx-poppins tx-14 tx-medium">Simpan</div>
+                                <div class="tx-poppins tx-14 tx-medium text-btn">Simpan</div>
                               </button>
                             </div>
                           </div>
                         </div>
-
-
 
                       </div>
                     </div>
@@ -500,6 +499,8 @@
       let stepId = 0;
       let selectedId;
       let states = [false, false, false]
+      const days = ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab']
+      const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 
       checkAvailableCuti();
 
@@ -512,6 +513,31 @@
         (stepId <= 0) ? stepId = 0 : stepId--;
         switchStep();
       })
+
+      $(".save-btn").click(function () {
+        // settimeout untuk animasi saja, hapus di prod
+        spin(this)
+        setTimeout(function() {
+          checkMark(".save-btn")
+        }, 2200)
+        setTimeout(function() {
+          $('#modalCuti').modal('hide');
+        }, 4600)
+      })
+
+      function spin(btn) {
+        $(btn).addClass("button--loading")
+        $(btn).find(".text-btn").css("transition", "all 150ms").css("opacity", "0")
+      }
+
+      function checkMark(btn) {
+        $(btn).removeClass("button--loading")
+        // $(".presenpercent").css("width", "100%").css("background-color", "#32ba9e")
+        $(btn).addClass("checkmark-sm").addClass("draw")
+        $(".checkmark-sm").toggle()
+        $(btn).css("pointer-events", "none");
+        $('.back-btn').css("background-color", "#e6e9f0").css("border", "2px solid #e6e9f0").css("color", "#9c9ea3").css("pointer-events", "none");
+      }
 
       function switchStep() {
         switch (stepId) {
@@ -610,8 +636,13 @@
       const awal = datepicker('#tanggalmulai', {
         id: 1,
         noWeekends: true,
-        customDays: ['Min', 'Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab'],
-        minDate: new Date(),
+        customDays: days,
+        customMonths: months,
+        minDate: new Date(), //apa bisa sebelum hari ini?
+        formatter: (input, date, instance) => {
+          const value = date.toLocaleDateString('id-ID')
+          input.value = days[date.getDay()] + ", " + value // => '1/1/2099'
+        },
         onSelect: function () {
           const durasi = awal.getRange();
           if (durasi.start != null && durasi.end != null) {
@@ -623,25 +654,29 @@
       const akhir = datepicker('#tanggalselesai', {
         id: 1,
         noWeekends: true,
-        customDays: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min'],
-        minDate: new Date(),
-        // maxDate: new Date(),
+        customDays: days,
+        customMonths: months,
+        minDate: new Date(), //apa bisa sebelum hari ini?
+        formatter: (input, date, instance) => {
+          const value = date.toLocaleDateString('id-ID')
+          input.value = days[date.getDay()] + ", " + value // => '1/1/2099'
+        },
         onSelect: function () {
           const durasi = akhir.getRange();
           if (durasi.start != null && durasi.end != null) {
             durasiHari = (durasi.end.getDate() - durasi.start.getDate()) - (durasi.start.getDate() - durasi.start.getDate())
             let startDay = durasi.start.getDay();
             let listDay = [];
-            let dontCount = [0,6] 
+            let dontCount = [0, 6]
             for (let i = 0; i <= durasiHari; i++) {
-              if (startDay <= 6 ) {
+              if (startDay <= 6) {
                 listDay.push(startDay++);
               } else {
                 listDay.push(startDay = 0);
                 startDay++;
               }
             }
-           listDay = listDay.filter(item => !dontCount.includes(item))
+            listDay = listDay.filter(item => !dontCount.includes(item))
             setDurasi(listDay.length)
           }
         },
