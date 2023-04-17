@@ -102,7 +102,7 @@
                       </div>
                     </div>
 
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4">
+                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4 mg-md-b-6">
                       <div class="col-12 rounded-its-10 wd-100p d-flex justify-content-end pd-6 bg-color search-input"
                         style="height: 44px;">
                         <input type="text" placeholder="Cari dengan kata kunci" id="search-key"
@@ -495,6 +495,7 @@
     $(function () {
       'use strict'
 
+      let maxDate = new Date();
       let sisaCutiTahunan = 10;
       let stepId = 0;
       let selectedId;
@@ -624,6 +625,7 @@
         noWeekends: true,
         customDays: ['Sen', 'Sel', 'Rab', 'Kam', 'Jum', 'Sab', 'Min'],
         minDate: new Date(),
+        // maxDate: new Date(),
         onSelect: function () {
           const durasi = akhir.getRange();
           if (durasi.start != null && durasi.end != null) {
@@ -636,12 +638,10 @@
                 listDay.push(startDay++);
               } else {
                 listDay.push(startDay = 0);
-              
                 startDay++;
               }
             }
            listDay = listDay.filter(item => !dontCount.includes(item))
-            // let syncWeek  = Math.floor(durasiHari/7);
             setDurasi(listDay.length)
           }
         },
