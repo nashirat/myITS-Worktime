@@ -40,20 +40,22 @@
                 <!-- DO NOT CHANGE END -->
                 <!-- Write Content Starts Here -->
 
-                <div class="wd-100p pd-x-5 d-flex justify-content-between align-items-center"
-                  style="margin-bottom: 40px;">
+                <div class="wd-100p pd-x-5 d-flex justify-content-between align-items-center mg-b-20">
                   <div class="content-div tx-color-02 pd-t-3">
                     <div>
                       <div class="tx-poppins tx-medium tx-30 tx-md-36 tx-color-01 mg-b-0">Manajemen Cuti</div>
                     </div>
                     <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Buat dan lihat data cuti anda</div>
                   </div>
-                  <a>
-                    <div class="btn btn-primary pd-x-20 pd-y-10" style="border-radius: 15px;" data-bs-toggle="modal"
-                      data-bs-target="#modalCuti">
-                      <div class="tx-poppins tx-14">Buat cuti baru</div>
-                    </div>
-                  </a>
+                  <div class="btn btn-primary pd-x-20 pd-y-10 d-none d-lg-block" style="border-radius: 15px;"
+                    data-bs-toggle="modal" data-bs-target="#modalCuti">
+                    <div class="tx-poppins tx-14">Buat cuti baru</div>
+                  </div>
+                </div>
+
+                <div class="btn btn-primary pd-x-20 pd-y-10 d-lg-none mg-b-20" style="border-radius: 15px;"
+                  data-bs-toggle="modal" data-bs-target="#modalCuti">
+                  <div class="tx-poppins tx-14">Buat cuti baru</div>
                 </div>
 
                 <div class="wd-100p pd-x-1 mg-b-5">
@@ -103,7 +105,7 @@
                     </div>
 
                     <div
-                      class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4 mg-md-b-6 mg-lg-b-0">
+                      class="col-12 col-md-12 col-lg-6 col-xl-6 col-mmxl-6 col-mxl-6 rounded-its-10 mg-t-4 mg-b-5 mg-lg-b-0">
                       <div class="col-12 rounded-its-10 wd-100p d-flex justify-content-end pd-6 bg-color search-input"
                         style="height: 44px;">
                         <input type="text" placeholder="Cari dengan kata kunci" id="search-key"
@@ -144,10 +146,10 @@
 
                       <div class="ht-100p d-flex flex-column">
                         <div class="d-flex flex-column pos-relative" style="margin-top: 120px;">
-                          <div class="d-flex justify-content-center tx-poppins tx-36 tx-medium wd-100p">
+                          <div class="d-flex justify-content-center tx-poppins tx-28 tx-lg-36 tx-medium wd-100p">
                             Pembuatan Cuti Baru
                           </div>
-                          <div class="d-flex justify-content-center tx-poppins tx-16 wd-100p">
+                          <div class="d-flex tx-center tx-lg-left justify-content-center tx-poppins tx-14 tx-lg-16 wd-100p">
                             Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
                           </div>
                         </div>
@@ -242,7 +244,7 @@
                                 </div>
 
                                 <div class="row row-xs mg-b-0 mg-t-5">
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
@@ -255,7 +257,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
@@ -272,7 +274,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-05 tx-16">Durasi cuti</div>
@@ -358,29 +360,27 @@
                                 </div>
 
                                 <div class="row row-xs mg-b-0 mg-t-5">
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal awal</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" value="26 April 2023"
-                                          id="tanggalmulaicek" name="tanggalmulaicek"
-                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                        <input type="text" value="26 April 2023" id="tanggalmulaicek"
+                                          name="tanggalmulaicek" class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-01 tx-16" style="margin-left: -4px;">Tanggal akhir</div>
                                       </div>
                                       <div class="col-12 pd-x-4 pd-y-10 rounded-its-6 input-bg-color inside-border">
-                                        <input type="text" value="28 April 2023" 
-                                          id="tanggalselesaicek" name="tanggalselesaicek"
-                                          class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
+                                        <input type="text" value="28 April 2023" id="tanggalselesaicek"
+                                          name="tanggalselesaicek" class="mn-wd-100p tx-16 mg-l-4 tx-color-01 tx-medium"
                                           style="border-radius: 10px; background-color: none !important; border: none !important;"
                                           readonly></input>
                                         <button
@@ -390,7 +390,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-12 col-md-4">
                                     <div class="row row-xs wd-100p mg-b-10 rounded-its-6 pd-0 mg-0">
                                       <div class="col-12 pd-y-6">
                                         <div class="tx-color-05 tx-16">Durasi cuti</div>
@@ -517,10 +517,10 @@
       $(".save-btn").click(function () {
         // settimeout untuk animasi saja, hapus di prod
         spin(this)
-        setTimeout(function() {
+        setTimeout(function () {
           checkMark(".save-btn")
         }, 2200)
-        setTimeout(function() {
+        setTimeout(function () {
           $('#modalCuti').modal('hide');
         }, 4600)
       })

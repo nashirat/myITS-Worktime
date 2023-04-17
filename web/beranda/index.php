@@ -9,7 +9,6 @@
 
 <body class="mn-ht-100v d-flex flex-column">
   <?php include "../partial/navbar.php" ?>
-
   <?php include "../partial/loading.php" ?>
 
 

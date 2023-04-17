@@ -12,7 +12,7 @@
         </div>
         <div class="d-flex align-items-center">
             <div class="d-lg-none">
-                <a class="tx-color-01" type="button" data-toggle="collapse" data-target="#mobilemenu"
+                <a class="tx-color-01" type="button" data-bs-toggle="collapse" data-bs-target="#mobilemenu"
                     aria-expanded="false" aria-controls="komponen">
                     <div class="dropdown nav-menu">
                         <ion-icon name="chevron-down" class="tx-26 mg-t-5"></ion-icon>
@@ -41,7 +41,7 @@
                     </li>
                     <button
                         class="btn btn-icon btn-sm btn-its-custom-1 rounded-its-20p d-flex align-items-center pos-absolute"
-                        style="top: 4px; right: 4px;" type="button" data-toggle="collapse" data-target="#komponen"
+                        style="top: 4px; right: 4px;" type="button" data-bs-toggle="collapse" data-bs-target="#komponen"
                         aria-expanded="false" aria-controls="komponen" title="Collapse">
                         <ion-icon name="chevron-down" class="mg-y-2 tx-18"></ion-icon>
                     </button>

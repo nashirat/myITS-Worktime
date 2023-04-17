@@ -1240,9 +1240,14 @@ ul.checkbox-its .label-its input[type="checkbox"]:hover + label {
 }
 
 .modal-fullscreen-its {
-  max-width: 100% !important;
+  min-width: 100% !important;
   margin: 0 !important;
 }
+
+.modal-fullscreen .modal-content {
+  height: auto !important;
+  min-height: 100% !important;
+} 
 
 .navbar {
   z-index: 999;
