@@ -323,11 +323,12 @@
                                     <div class="pd-y-6">
                                       <div class="tx-color-01 tx-16">Surat Dokter</div>
                                     </div>
-                                    <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    <div class="pd-x-8 d-flex align-items-center pd-y-8 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
-                                      <input type="file" value="" placeholder="Surat dokter atau keterangan lain" id="keterangan"
+                                      <input id="sudok" type="file" value="" placeholder="Surat dokter atau keterangan lain" id="keterangan"
                                         class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
-                                        style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                        style="display: none;"></input>
+                                        <label for="sudok" class="btn btn-primary mg-0 tx-14" style="border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; width: min-content; white-space: nowrap;">Upload file</label>
                                     </div>
                                   </div>
                                 </div>
