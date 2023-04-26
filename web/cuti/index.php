@@ -47,13 +47,13 @@
                     </div>
                     <div class="tx-16 tx-md-18 tx-color-01 pd-x-2">Buat dan lihat data cuti anda</div>
                   </div>
-                  <div class="btn btn-primary pd-x-20 pd-y-10 d-none d-lg-block" style="border-radius: 15px;"
+                  <div class="btn btn-primary pd-x-15 pd-y-8 d-none d-lg-block" style="border-radius: 12px;"
                     data-bs-toggle="modal" data-bs-target="#modalCuti">
                     <div class="tx-poppins tx-14">Buat cuti baru</div>
                   </div>
                 </div>
 
-                <div class="btn btn-primary pd-x-20 pd-y-10 d-lg-none mg-b-20" style="border-radius: 15px;"
+                <div class="btn btn-primary pd-x-15 pd-y-8 d-lg-none mg-b-20" style="border-radius: 12px;"
                   data-bs-toggle="modal" data-bs-target="#modalCuti">
                   <div class="tx-poppins tx-14">Buat cuti baru</div>
                 </div>
@@ -149,7 +149,8 @@
                           <div class="d-flex justify-content-center tx-poppins tx-28 tx-lg-36 tx-medium wd-100p">
                             Pembuatan Cuti Baru
                           </div>
-                          <div class="d-flex tx-center tx-lg-left justify-content-center tx-poppins tx-14 tx-lg-16 wd-100p">
+                          <div
+                            class="d-flex tx-center tx-lg-left justify-content-center tx-poppins tx-14 tx-lg-16 wd-100p">
                             Ikuti langkah-langkah berikut untuk membuat pengajuan cuti baru
                           </div>
                         </div>
@@ -303,18 +304,34 @@
                                       class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                       style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                   </div>
-                                  <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                </div>
+
+                                <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15">
+                                  <div class="pd-y-6">
+                                    <div class="tx-color-01 tx-16">Alamat</div>
+                                  </div>
+                                  <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
+                                    style="border-radius: 6px !important;">
+                                    <input type="text" value="" placeholder="Alamat anda selama cuti" id="keterangan"
+                                      class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
+                                      style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
+                                  </div>
+                                </div>
+
+                                <div class="d-block">
+                                  <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15 sd">
                                     <div class="pd-y-6">
-                                      <div class="tx-color-01 tx-16">Alamat</div>
+                                      <div class="tx-color-01 tx-16">Surat Dokter</div>
                                     </div>
                                     <div class="pd-x-4 pd-y-10 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
-                                      <input type="text" value="" placeholder="Alamat anda selama cuti" id="keterangan"
+                                      <input type="file" value="" placeholder="Surat dokter atau keterangan lain" id="keterangan"
                                         class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                         style="border-radius: 10px; background-color: none !important; border: none !important; "></input>
                                     </div>
                                   </div>
                                 </div>
+
                               </div>
                             </div>
                           </div>
@@ -561,6 +578,7 @@
         }
       }
 
+      // cek cuti tersedia
       function checkAvailableCuti() {
         let ids = [".cuti-select#tahunan", ".cuti-select#besar", ".cuti-select#sakit", ".cuti-select#melahirkan", ".cuti-select#alasanpenting", ".cuti-select#luartanggungan"]
         let flags = [true, false, true, true, true, true]
@@ -585,8 +603,6 @@
 
       $('.inputform').change(function () {
         validateForm();
-        // console.log("yo")
-        // console.log(states[1])
         checkNextButton(states[1]);
       })
 
@@ -638,7 +654,7 @@
         noWeekends: true,
         customDays: days,
         customMonths: months,
-        minDate: new Date(), //apa bisa sebelum hari ini?
+        // minDate: new Date(), //apa bisa sebelum hari ini? bisa
         formatter: (input, date, instance) => {
           const value = date.toLocaleDateString('id-ID')
           input.value = days[date.getDay()] + ", " + value // => '1/1/2099'
@@ -656,7 +672,7 @@
         noWeekends: true,
         customDays: days,
         customMonths: months,
-        minDate: new Date(), //apa bisa sebelum hari ini?
+        // minDate: new Date(), //apa bisa sebelum hari ini?
         formatter: (input, date, instance) => {
           const value = date.toLocaleDateString('id-ID')
           input.value = days[date.getDay()] + ", " + value // => '1/1/2099'
