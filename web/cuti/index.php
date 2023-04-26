@@ -318,7 +318,7 @@
                                   </div>
                                 </div>
 
-                                <div class="d-block">
+                                <div class="is-sakit d-none">
                                   <div class="wd-100p mg-b-10 pd-0 mg-0 mg-t-15 sd">
                                     <div class="pd-y-6">
                                       <div class="tx-color-01 tx-16">Surat Dokter</div>
@@ -628,21 +628,27 @@
             let textSisa = '<span class="tx-normal">  dengan sisa cuti <span class="tx-medium">' + sisaCutiTahunan + ' Hari </span></span>'
             let textCuti = "Cuti Tahunan" + textSisa;
             $(".cuti-terpilih").html(textCuti);
+            $(".is-sakit").removeClass("d-block").addClass("d-none");
             break;
           case "besar":
             $(".cuti-terpilih").html("Cuti Besar");
+            $(".is-sakit").removeClass("d-block").addClass("d-none");
             break;
           case "sakit":
             $(".cuti-terpilih").html("Cuti Tahunan");
+            $(".is-sakit").removeClass("d-none").addClass("d-block");
             break;
           case "melahirkan":
             $(".cuti-terpilih").html("Cuti Melahirkan");
+            $(".is-sakit").removeClass("d-block").addClass("d-none");
             break;
           case "alasanpenting":
             $(".cuti-terpilih").html("Cuti Alasan Penting");
+            $(".is-sakit").removeClass("d-block").addClass("d-none");
             break;
           case "luartanggungan":
             $(".cuti-terpilih").html("Cuti di Luar Tanggungan Negara");
+            $(".is-sakit").removeClass("d-block").addClass("d-none");
             break;
         }
         states[0] = true;
