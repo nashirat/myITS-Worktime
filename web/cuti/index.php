@@ -145,7 +145,7 @@
                       </div>
 
                       <div class="ht-100p d-flex flex-column">
-                        <div class="d-flex flex-column pos-relative" style="margin-top: 120px;">
+                        <div class="d-flex flex-column pos-relative" style="margin-top: 100px;">
                           <div class="d-flex justify-content-center tx-poppins tx-28 tx-lg-36 tx-medium wd-100p">
                             Pembuatan Cuti Baru
                           </div>
@@ -323,12 +323,16 @@
                                     <div class="pd-y-6">
                                       <div class="tx-color-01 tx-16">Surat Dokter</div>
                                     </div>
-                                    <div class="pd-x-8 d-flex align-items-center pd-y-8 input-bg-color inside-border pos-relative"
+                                    <div
+                                      class="pd-x-8 d-flex align-items-center pd-y-8 input-bg-color inside-border pos-relative"
                                       style="border-radius: 6px !important;">
-                                      <input id="sudok" type="file" value="" placeholder="Surat dokter atau keterangan lain" id="keterangan"
+                                      <input id="sudok" type="file" name="sudok"
                                         class="wd-100p tx-16 mg-l-4 tx-color-01 tx-medium inputform"
                                         style="display: none;"></input>
-                                        <label for="sudok" class="btn btn-primary mg-0 tx-14" style="border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; width: min-content; white-space: nowrap;">Upload file</label>
+                                      <label for="sudok" class="btn btn-primary mg-0 tx-14"
+                                        style="border-radius: 5px; padding-top: 3px; padding-bottom: 3px; padding-left: 8px; padding-right: 8px; width: min-content; white-space: nowrap;">Upload
+                                        file</label>
+                                      <div class="tx-16 mg-l-5 file-name" style="color: #999999;">Belum ada file</div>
                                     </div>
                                   </div>
                                 </div>
@@ -504,8 +508,6 @@
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-
-
 
   <!-- Pilih Cuti -->
   <script>
@@ -712,6 +714,12 @@
       function setDurasi(x) {
         $("#durasi").val(x + " Hari");
       }
+
+      $('#sudok').change(function(e){
+          var fileName = e.target.files[0].name;
+          $(".file-name").html(fileName);
+          $(".file-name").css("color","#000000")
+        });
 
     })
   </script>
