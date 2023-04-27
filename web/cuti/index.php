@@ -510,6 +510,8 @@
   <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
 
   <!-- Pilih Cuti -->
+
+  <!-- NEED TO MAKE RESETABLE STATE, OR FORCE RESET PAGE ON SAVE -->
   <script>
     $(function () {
       'use strict'
@@ -542,8 +544,18 @@
         }, 2200)
         setTimeout(function () {
           $('#modalCuti').modal('hide');
+          resetCuti();
         }, 4600)
       })
+
+      function resetCuti()  {
+        stepId = 0;
+        $(".inputform").val("");
+        $(".step-2").removeClass("d-block").addClass("d-none");
+        $(".step-3").removeClass("d-block").addClass("d-none");
+        $(".step-1").removeClass("d-none").addClass("d-block");
+        checkNextButton(states[0]);
+      }
 
       function spin(btn) {
         $(btn).addClass("button--loading")
@@ -631,26 +643,32 @@
             let textCuti = "Cuti Tahunan" + textSisa;
             $(".cuti-terpilih").html(textCuti);
             $(".is-sakit").removeClass("d-block").addClass("d-none");
+            $("#sudok").removeClass('inputform');
             break;
           case "besar":
             $(".cuti-terpilih").html("Cuti Besar");
             $(".is-sakit").removeClass("d-block").addClass("d-none");
+            $("#sudok").removeClass('inputform');
             break;
           case "sakit":
-            $(".cuti-terpilih").html("Cuti Tahunan");
+            $(".cuti-terpilih").html("Cuti Sakit");
             $(".is-sakit").removeClass("d-none").addClass("d-block");
+            $("#sudok").addClass('inputform');
             break;
           case "melahirkan":
             $(".cuti-terpilih").html("Cuti Melahirkan");
             $(".is-sakit").removeClass("d-block").addClass("d-none");
+            $("#sudok").removeClass('inputform');
             break;
           case "alasanpenting":
             $(".cuti-terpilih").html("Cuti Alasan Penting");
             $(".is-sakit").removeClass("d-block").addClass("d-none");
+            $("#sudok").removeClass('inputform');
             break;
           case "luartanggungan":
             $(".cuti-terpilih").html("Cuti di Luar Tanggungan Negara");
             $(".is-sakit").removeClass("d-block").addClass("d-none");
+            $("#sudok").removeClass('inputform');
             break;
         }
         states[0] = true;
